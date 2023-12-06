@@ -526,8 +526,49 @@
       "balance": "200",
       "agreement": true,
       "isAdmin": false,
-      "basket": [],
-      "wishlist": [],
+      "basket": [
+        {
+          "name": "McCrispy™",
+          "image": "https://mcdonalds.az/images/eb02fdcd1e6fc5a0bdfae04a73cfaadc.png",
+          "description": "Küncütlü bulkanın arasında 100% toyuq filesindən xırtıldayan kotlet, təzə Aysberq salatı və ranç sousu.",
+          "allergen": [
+            "Süd",
+            "Yumurta",
+            "Qlüten",
+            "Küncüt tumları"
+          ],
+          "info": [],
+          "size": [],
+          "categoryID": 1,
+          "id": "5",
+          "price": 12.99,
+          "count": 1
+        },
+        {
+          "name": "Fiş Freş",
+          "image": "https://mcdonalds.az/images/50ef4c34b8e6389e1055bdcf9c74a823.png",
+          "description": "Yumşaq bulkanın arasında qızardılmış balıq filesi, təzə Aysberq salatı, xüsusi sousu və pomidor dilimi.",
+          "allergen": [],
+          "info": [],
+          "size": [],
+          "categoryID": 1,
+          "id": "3",
+          "price": "6.99"
+        }
+      ],
+      "wishlist": [
+        {
+          "name": "Bif Freş",
+          "image": "https://mcdonalds.az/images/36e04d7fca426a5e7a4ad922a0041f8e.png",
+          "description": "Karamelləşdirilmiş küncütlü bulkanın arasında 100% mal ətindən döyülmüş bifşteks, 1 ədəd Çedder pendirinin dilimi, xüsusi sousu, təzə soğan, təzə Aysberq salatı, xıyar və pomidor dilimləri.",
+          "allergen": [],
+          "info": [],
+          "size": [],
+          "categoryID": 1,
+          "id": "1",
+          "price": 8.99
+        }
+      ],
       "id": "4b2w0aO"
     },
     {

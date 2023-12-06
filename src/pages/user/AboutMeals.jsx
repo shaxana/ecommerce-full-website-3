@@ -6,7 +6,7 @@ function AboutMeals() {
             <div className="containerabout">
                 <div className="about">
                     <div className="text">
-                        <h1>Yemeklerimiz haqqinda</h1>
+                        <h1>Yeməklərimiz haqqında</h1>
                     </div>
                     <div className="image">
                         <img src="https://mcdonalds.az/images/e1365cd6b7a0589ce08bdd726c4d7ab3.jpg" alt="" />

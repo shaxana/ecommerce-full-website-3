@@ -17,6 +17,7 @@ import {
 } from "../../redux/slices/loginSlice";
 import { useDispatch, useSelector } from "react-redux";
 import "./../../style/sass/meals.scss";
+import { current } from "@reduxjs/toolkit";
 function Meals() {
   let [meals, setMeal] = useState([]);
   useEffect(() => {
@@ -24,11 +25,15 @@ function Meals() {
       setMeal(res.data);
     });
   }, []);
+  const currentUser = useSelector((state) => state.login.currentUser);
 
   let [fav, setFav] = useState([]);
   const dispatch = useDispatch();
   const favItems = useSelector((state) => {
     return state.login.wishlist;
+  });
+  const cartItems = useSelector((state) => {
+    return state.login.cart;
   });
   return (
     <>
@@ -159,6 +164,12 @@ function Meals() {
                             className="cartButton"
                             onClick={(e) => {
                               e.stopPropagation();
+                              if( currentUser && currentUser.id){
+                                axios.patch(`http://localhost:3000/users/${currentUser.id}`,{
+                                  basket: [...cartItems, meal]
+                                })
+                                localStorage.setItem("cartmeal", JSON.stringify(meal))
+                               }
                               dispatch(addToCart(meal));
                             }}
                           >
@@ -184,7 +195,14 @@ function Meals() {
                               );
                               if (isFavorite) {
                                 dispatch(removeFavorite(meal.id));
+                                
                               } else {
+                                if( currentUser && currentUser.id){
+                                  axios.patch(`http://localhost:3000/users/${currentUser.id}`,{
+                                    wishlist: [...favItems, meal]
+                                  })
+                                  localStorage.setItem("favmeal", JSON.stringify(meal))
+                                 }
                                 dispatch(addToFavorite(meal));
                               }
                             }}

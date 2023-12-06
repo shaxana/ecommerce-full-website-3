@@ -119,6 +119,7 @@ function Login() {
                   if (check) {
                     dispatch(loginSuccess(check));
                     console.log(isLogin);
+                    localStorage.setItem("loggeduser", JSON.stringify(check))
                     navigate("/")
                   }
                   else {

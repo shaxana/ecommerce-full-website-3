@@ -38,7 +38,13 @@ const Wishlist = () => {
      return      (
     <Grid item xs={4} key={favItem.id}>
     <Card sx={{ maxWidth: 345 }} style={{marginLeft:50}}>
-    <FontAwesomeIcon icon={faHeart} style={{marginLeft:310, color:'red'}}  />
+    <FontAwesomeIcon icon={faHeart} style={{marginLeft:310, color:'red', cursor:"pointer"}} onClick={()=>{
+      const isFavorite = favItems.find(
+        (favItem) => favItem.id === meal.id
+      );
+      dispatch(removeFavorite(favItem));
+
+    }} />
    
         <CardMedia
           sx={{ height: 140 }}
