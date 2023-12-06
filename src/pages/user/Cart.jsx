@@ -51,10 +51,10 @@ return <Grid item xs={4} key={cartItem.id}>
       {cartItem.description} 
       </Typography>
       <div className="count" style={{display:"flex"}}>
-      <Button style={{width:40, height:40, cursor:"pointer"}} onClick={()=>{
+      <Button style={{width:40, height:40, cursor:"pointer" ,margin:"0", border:"1px solid grey"}} onClick={()=>{
         dispatch(increaseCount({id: cartItem.id}))
       }}>+</Button>
-      <Typography variant="body2" color="text.secondary" style={{marginLeft:110}}>
+      <Typography variant="body2" color="text.secondary" style={{marginLeft:200}}>
      Count: {cartItem.count}
       </Typography>
       <Button style={{width:40, height:40, cursor:"pointer"}} onClick={()=>{

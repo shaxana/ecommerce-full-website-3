@@ -424,12 +424,7 @@
   "users": [
     {
       "name": "Ayan",
-      "password": "123",
-      "agreement": true,
-      "Basket": [],
-      "wishlist": [],
-      "balance": 100,
-      "IsAdmin": true,
+      "password": "321",
       "id": "1"
     },
     {
@@ -449,15 +444,6 @@
       "balance": 100,
       "IsAdmin": true,
       "id": "3"
-    },
-    {
-      "name": "name 4",
-      "password": "password 4",
-      "Basket": [],
-      "wishlist": [],
-      "balance": 100,
-      "IsAdmin": false,
-      "id": "4"
     },
     {
       "name": "name 5",
@@ -619,6 +605,11 @@
       "basket": [],
       "wishlist": [],
       "id": "XZi86C7"
+    },
+    {
+      "name": "asd",
+      "password": "asd",
+      "id": "NxCswDY"
     }
   ]
 }
