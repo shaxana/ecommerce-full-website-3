@@ -19,33 +19,86 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { registerSuccess } from "../../redux/slices/registerSlice";
+import { useFormik } from "formik";
+import styled from "@emotion/styled";
+const validate = (values) => {
+  const errors = {};
+
+  if (!values.name) {
+    errors.name = "Please add your name!";
+  } else if (values.name.length > 7) {
+    errors.name = "Name must be at least 10 characters long";
+  } else if (/\d/.test(values.name)) {
+    errors.name = "Name cannot contain numbers!";
+  }
+  if (!values.password) {
+    errors.name = "Please add your name!";
+  } else if (values.password.length > 7) {
+    errors.name = "Name must be at least 10 characters long";
+  } else if (/\d/.test(values.password)) {
+    errors.name = "Name cannot contain numbers!";
+  }
+  return errors;
+};
 function Copyright(props) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
+  const formik = useFormik({
+    initialValues: {
+      balance: "",
+      name: "",
+      password: "",
+    },
+    validate,
+    onSubmit: (values) => {
+      console.log(values);
+    },
+  });
+  // return (
+  //   // <Typography
+  //   //   variant="body2"
+  //   //   color="text.secondary"
+  //   //   align="center"
+  //   //   {...props}
+  //   // >
+  //   //   {"Copyright © "}
+  //   //   <Link color="inherit" href="https://mui.com/">
+  //   //     Your Website
+  //   //   </Link>{" "}
+  //   //   {new Date().getFullYear()}
+  //   //   {"."}
+  //   // </Typography>
+  // );
 }
 
 const defaultTheme = createTheme();
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
-    .min(3, "Too Short!")
-    .max(10, "Too Long!")
+    .test(
+      "maxCapitalLetters",
+      "Name must not contain more than 1 capital letter",
+      (value) => {
+        const capitalLetterCount = (value.match(/[A-Z]/g) || []).length;
+        return capitalLetterCount <= 1;
+      }
+    )
+    .min(1, "Too Short!")
+    .max(7, "Too Long!")
     .required("Required"),
   // .test("Name must contain only letters"),
-  password: Yup.string().required("Required"),
+  password: Yup.string()
+    .test(
+      "maxCapitalLetters",
+      "Password must not contain more than 3 capital letters",
+      (value) => {
+        const capitalLetterCount = (value.match(/[A-Z]/g) || []).length;
+        return capitalLetterCount <= 3;
+      }
+    )
+    .min(1, "Too Short Password!")
+
+    .max(13, "Too Long Password!")
+    .required("Required"),
   balance: Yup.string()
+    .matches(/^\d+$/, "Balance must contain only numbers")
     // .test("balance must contain number", digitsOnly)
     .required("Required"),
 });
@@ -59,25 +112,24 @@ function Register() {
       style={{
         background:
           "url(https://images.pexels.com/photos/11459428/pexels-photo-11459428.jpeg?auto=compress&cs=tinysrgb&w=1600)",
-          height:"83vh",
+        height: "83vh",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        
+
         backgroundPosition: "center",
       }}
     >
-      <ThemeProvider  theme={defaultTheme}>
-        <Container style={{margin:"0 auto"}} component="main" maxWidth="xs">
+      <ThemeProvider theme={defaultTheme}>
+        <Container component="main" maxWidth="xs" style={{ margin: "0 auto" }}>
           <CssBaseline />
-          <Box 
+          <Box
             sx={{
-              
-              background:"transparent !important",
+              background: "transparent !important",
               marginTop: -6,
               display: "flex",
-              justifyContent:"center",
-              position:"relative",
-              top:"150px",
+              justifyContent: "center",
+              position: "relative",
+              top: "150px",
               flexDirection: "column",
               alignItems: "center",
             }}
@@ -95,14 +147,17 @@ function Register() {
               <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
                 <LockOutlinedIcon />
               </Avatar>
-              <Typography style={{color:"black",margin:"10px",marginLeft:"2px"}} component="h1" variant="h5">
+              <Typography
+                style={{ color: "black", margin: "10px", marginLeft: "2px" }}
+                component="h1"
+                variant="h5"
+              >
                 Sign up
               </Typography>
 
               <Box>
                 <Formik
                   initialValues={{
-                    id:"",
                     name: "",
                     password: "",
                     balance: "",
@@ -127,27 +182,101 @@ function Register() {
                     }
                   }}
                 >
-                  <Form>
-                    <label htmlFor="name">Name</label>
-                    <Field style={{marginLeft:"42px",padding:"5px",borderRadius:"2px",}} name="name" />
-                    <br />
-                    <label htmlFor="password">Password</label>
-                    <Field style={{marginLeft:"15px",padding:"5px",borderRadius:"2px",marginTop:"10px",marginRight:"10px"}} name="password" />
-                    <br />
-                    <label  htmlFor="balance">Balance</label>
-                    <Field style={{marginLeft:"28px",padding:"5px",borderRadius:"2px",marginTop:"10px"}}  name="balance" />
-                    <br />
-                    <label style={{position:"relative",top:"15px"}} htmlFor="agreement">I agree all the terms </label> 
-                    <Field style={{position:"relative",top:"15px"}} name="agreement" type="checkbox" /> 
-                    <button style={{background:"white", 
-                   width:"150px", height:"25px", marginTop:"25px" ,borderRadius:"8px", marginLeft:"5px",width:"100%", fontSize:"15px" ,height:"45px", cursor:"pointer"}} type="submit">Submit</button>
-                    <br />
-                  </Form>
+                  {({ values, handleChange, errors }) => (
+                    <Form>
+                      <label htmlFor="name">Name</label>
+                      <Field
+                        style={{
+                          marginLeft: "42px",
+                          padding: "5px",
+                          borderRadius: "2px",
+                        }}
+                        name="name"
+                        className="inp1"
+                        id="name"
+                        type="text"
+                        onChange={handleChange}
+                        value={values.name}
+                      />
+                      {errors.name ? (
+                        <div style={{ color: "red" }}>{errors.name}</div>
+                      ) : null}
+                      <br />
+                      <label htmlFor="password">Password</label>
+                      <Field
+                        style={{
+                          marginLeft: "15px",
+                          padding: "5px",
+                          borderRadius: "2px",
+                          marginTop: "10px",
+                          marginRight: "10px",
+                        }}
+                        name="password"
+                        className="inp2"
+                        id="password"
+                        type="password"
+                        onChange={handleChange}
+                        value={values.password}
+                      />
+                      {errors.password ? (
+                        <div style={{ color: "red" }}>{errors.password}</div>
+                      ) : null}
+                      <br />
+                      <label htmlFor="balance">Balance</label>
+                      <Field
+                        style={{
+                          marginLeft: "28px",
+                          padding: "5px",
+                          borderRadius: "2px",
+                          marginTop: "10px",
+                        }}
+                        name="balance"
+                        className="inp3"
+                        id="balance"
+                        type="text"
+                        onChange={handleChange}
+                        value={values.balance}
+                      />
+                      {errors.balance ? (
+                        <div style={{ color: "red" }}>{errors.balance}</div>
+                      ) : null}
+                      <br />
+                      <label
+                        style={{ position: "relative", top: "15px" }}
+                        htmlFor="agreement"
+                      >
+                        I agree all the terms{" "}
+                      </label>
+                      <Field
+                        style={{ position: "relative", top: "15px" }}
+                        name="agreement"
+                        type="checkbox"
+                      />
+                      <button
+                        style={{
+                          background: "white",
+                          width: "150px",
+                          height: "25px",
+                          marginTop: "25px",
+                          borderRadius: "8px",
+                          marginLeft: "5px",
+                          width: "100%",
+                          fontSize: "15px",
+                          height: "45px",
+                          cursor: "pointer",
+                        }}
+                        type="submit"
+                      >
+                        Submit
+                      </button>
+                      <br />
+                    </Form>
+                  )}
                 </Formik>
               </Box>
             </Paper>
           </Box>
-          {/* <Copyright sx={{ mt: -3, ml: 17 }} /> */}
+          <Copyright sx={{ m: 0 }} />
         </Container>
       </ThemeProvider>
     </div>

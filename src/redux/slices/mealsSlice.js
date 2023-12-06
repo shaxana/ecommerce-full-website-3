@@ -1,18 +1,28 @@
 import { createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 const mealsSlice = createSlice({
   name: 'meals',
   initialState: {
-    meals: [],
-    
+    data: [],
+    editId: "",
+    mealName: '',
+    mealPrice: 0,
   },
   reducers: {
-    addMeal: (state, action) => {
-      state.meals = [...state.meals, action.payload];
-    }
+    setMealsData: (state, action) => {
+      state.data = action.payload;
+    },
+    setEditId: (state, action) => {
+      state.editId = action.payload;
+    },
+    setMealName: (state, action) => {
+      state.mealName = action.payload;
+    },
+    setMealPrice: (state, action) => {
+      state.mealPrice = action.payload;
+    },
   },
 });
 
-export const { addMeal} = mealsSlice.actions;
+export const { setMealsData, setEditId, setMealName, setMealPrice } = mealsSlice.actions;
 export default mealsSlice.reducer;

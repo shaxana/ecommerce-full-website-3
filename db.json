@@ -9,7 +9,7 @@
       "size": [],
       "categoryID": 1,
       "id": "1",
-      "price":8.99
+      "price": 8.99
     },
     {
       "name": "Çiken Freş",
@@ -20,7 +20,7 @@
       "size": [],
       "categoryID": 1,
       "id": "2",
-      "price":12.99
+      "price": 12.99
     },
     {
       "name": "Fiş Freş",
@@ -31,7 +31,7 @@
       "size": [],
       "categoryID": 1,
       "id": "3",
-      "price":"6.99"
+      "price": "6.99"
     },
     {
       "name": "Şauram Roll",
@@ -48,7 +48,7 @@
       "size": [],
       "categoryID": 1,
       "id": "4",
-      "price":"5.99"
+      "price": "5.99"
     },
     {
       "name": "McCrispy™",
@@ -64,7 +64,7 @@
       "size": [],
       "categoryID": 1,
       "id": "5",
-      "price":12.99
+      "price": 12.99
     },
     {
       "name": "Hamburger",
@@ -609,6 +609,16 @@
         "id": "CTDcZC2"
       },
       "id": "i-TgGYr"
+    },
+    {
+      "name": "aydan",
+      "password": "aydan",
+      "balance": "1234",
+      "agreement": true,
+      "isAdmin": false,
+      "basket": [],
+      "wishlist": [],
+      "id": "XZi86C7"
     }
   ]
 }
