@@ -1,0 +1,614 @@
+{
+  "meals": [
+    {
+      "name": "Bif Freş",
+      "image": "https://mcdonalds.az/images/36e04d7fca426a5e7a4ad922a0041f8e.png",
+      "description": "Karamelləşdirilmiş küncütlü bulkanın arasında 100% mal ətindən döyülmüş bifşteks, 1 ədəd Çedder pendirinin dilimi, xüsusi sousu, təzə soğan, təzə Aysberq salatı, xıyar və pomidor dilimləri.",
+      "allergen": [],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "1",
+      "price":8.99
+    },
+    {
+      "name": "Çiken Freş",
+      "image": "https://mcdonalds.az/images/afa4b44cdad58e8e48e825e682dd5bae.png",
+      "description": "Karamelləşdirilmiş bulkanın arasında suxarıya batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı, xüsusi sousu, pomidor dilimi və xıyar.",
+      "allergen": [],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "2",
+      "price":12.99
+    },
+    {
+      "name": "Fiş Freş",
+      "image": "https://mcdonalds.az/images/50ef4c34b8e6389e1055bdcf9c74a823.png",
+      "description": "Yumşaq bulkanın arasında qızardılmış balıq filesi, təzə Aysberq salatı, xüsusi sousu və pomidor dilimi.",
+      "allergen": [],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "3",
+      "price":"6.99"
+    },
+    {
+      "name": "Şauram Roll",
+      "image": "https://mcdonalds.az/images/c20f2510cbddb63206c7d6c4ad263159.png",
+      "description": "Lavaşda xüsüsi sousun əlavəsi ilə suxarıya batırılmış, qızardılmış toyuq filesi, kartof və turşu xiyar.",
+      "allergen": [
+        "Sülfidlər",
+        "Xardal",
+        "Yumurta",
+        "Kərəviz",
+        "Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "4",
+      "price":"5.99"
+    },
+    {
+      "name": "McCrispy™",
+      "image": "https://mcdonalds.az/images/eb02fdcd1e6fc5a0bdfae04a73cfaadc.png",
+      "description": "Küncütlü bulkanın arasında 100% toyuq filesindən xırtıldayan kotlet, təzə Aysberq salatı və ranç sousu.",
+      "allergen": [
+        "Süd",
+        "Yumurta",
+        "Qlüten",
+        "Küncüt tumları"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "5",
+      "price":12.99
+    },
+    {
+      "name": "Hamburger",
+      "image": "https://mcdonalds.az/images/7e2ebc7f8f56fbb9ea6374b5d7ad55e3.png",
+      "description": "Karamelləşdirilmiş bulkanın arasında 100% mal ətindən döyülmüş bifşteks, xardal, ketçup, soğan və duzlu xiyar dilimləri.",
+      "allergen": [
+        "Xardal",
+        "Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "6",
+      "price": 13.99
+    },
+    {
+      "name": "Çizburger",
+      "image": "https://mcdonalds.az/images/21a29d5d8d422d969e85b2c83e6ead97.png",
+      "description": "Karamelləşdirilmiş bulkanın arasında 100% mal ətindən döyülmüş bifşteks, Çedder pendirinin dilimi, xardal, ketçup, soğan və duzlu xiyar dilimləri.",
+      "allergen": [
+        "Xardal",
+        "Süd",
+        "Soya",
+        "Yumurta",
+        "Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "7",
+      "price": 15.99
+    },
+    {
+      "name": "Dabl Hamburger",
+      "image": "https://mcdonalds.az/images/41f4b61d6b03de45443abbb89a2e4422.png",
+      "description": "Karamelləşdirilmiş bulkanın arasında iki 100% mal ətindən döyülmüş bifşteks, xardal, ketçup, soğan və duzlu xiyar dilimləri.",
+      "allergen": [
+        "Xardal",
+        "Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "8",
+      "price": 8.99
+    },
+    {
+      "name": "Dabl Çizburger",
+      "image": "https://mcdonalds.az/images/c3810fe9a08f596796758778288d4346.png",
+      "description": "Karamelləşdirilmiş bulkanın arasında iki ədəd 100% mal ətindən döyülmüş bifşteks, 2 Çedder pendirinin dilimi, xardal, ketçup, soğan və duzlu xiyar dilimləri.",
+      "allergen": [
+        "Xardal",
+        "Süd",
+        "Soya",
+        "Yumurta",
+        "Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "9",
+      "price": 13.99
+    },
+    {
+      "name": "Tripl Hamburger",
+      "image": "https://mcdonalds.az/images/fe36ad169599d4ea770858b136e9e0eb.png",
+      "description": "Yumşaq bulkasının arasında 3 ədəd 100% mal ətindən iştahaçan bifşteks, ketçup, xardal, duzlu xıyar və soğan.",
+      "allergen": [
+        "Xardal",
+        "Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "10",
+      "price": 16.99
+    },
+    {
+      "name": "Tripl Çizburger",
+      "image": "https://mcdonalds.az/images/c9023fbb49dea6116cc7ba7f551c3b82.png",
+      "description": "Yumşaq bulkasının arasında 3 ədəd 100% mal ətindən iştahaçan bifşteks, 3 ədəd əridilmiş çeddar pendiri, ketçup, xardal, duzlu xıyar və soğan. ",
+      "allergen": [
+        "Xardal",
+        "Süd",
+        "Soya",
+        "Yumurta",
+        "Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "11",
+      "price": 15.99
+    },
+    {
+      "name": "Big Mac™",
+      "image": "https://mcdonalds.az/images/8910b43241f23679d86e379346e3cbf7.png",
+      "description": "Küncütlü bulkanın arasında iki ədəd 100% mal ətindən döyülmüş bifşteks, soğan, iki dilim duzlu xiyar, Çedder pendirinin 1 dilimi, Aysberq salatı və xüsusi Big Mac™ sousu.",
+      "allergen": [
+        "Xardal",
+        "Süd",
+        "Soya",
+        "Yumurta",
+        "Qlüten",
+        "Küncüt tumları"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "12",
+      "price": 7.99
+    },
+    {
+      "name": "Dabl Big Mac™",
+      "image": "https://mcdonalds.az/images/95b0adcbdfb2ff672c6b0a6fa1a3a07d.png",
+      "description": "Küncütlü bulkanın arasında dörd ədəd 100% mal ətindən döyülmüş bifşteks, soğan, iki dilim duzlu xiyar, Çedder pendirinin 1 dilimi, Aysberq salatı və xüsusi Big Mac™ sousu.",
+      "allergen": [
+        "Xardal",
+        "Süd",
+        "Soya",
+        "Yumurta",
+        "Qlüten",
+        "Küncüt tumları"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "13",
+      "price": 10.99
+    },
+    {
+      "name": "Royal Çizburger",
+      "image": "https://mcdonalds.az/images/600627901ee83e673a8373109f48e437.png",
+      "description": "Karamelləşdirilmiş küncütlü bulkanın arasında 100% mal ətindən döyülmüş bifşteks, 2 ədəd Çedder pendirinin dilimi, xardal, ketçup, təzə soğan və duzlu xiyar dilimləri.",
+      "allergen": [
+        "Xardal",
+        "Süd",
+        "Soya",
+        "Qlüten",
+        "Küncüt tumları"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "14",
+      "price": 16.99
+    },
+    {
+      "name": "Dabl Royal Çizburger",
+      "image": "https://mcdonalds.az/images/600627901ee83e673a8373109f48e437.png",
+      "description": "Karamelləşdirilmiş bulkanın arasında iki ədəd 100% mal ətindən döyülmüş bifşteks, 2 Çedder pendirinin dilimi, xardal, ketçup, soğan və duzlu xiyar dilimləri.",
+      "allergen": [
+        "Xardal",
+        "Süd",
+        "Soya",
+        "Qlüten",
+        "Küncüt tumları"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "15",
+      "price": 17.99
+    },
+    {
+      "name": "Big Tasty™ (Ət)",
+      "image": "https://mcdonalds.az/images/387c433be255a2119d7a48f77e959cb0.png",
+      "description": "Həcmli küncütlü bulka arasında böyük, 100% mal ətindən döyülmüş bifşteks olan burger. Üç dilim Emmental pendiri, iki dilim təzə pomidor, Aysberq salatı, təzə soğan və “Qril” sousu ona xüsusi dad verir.",
+      "allergen": [
+        "Süd",
+        "Yumurta",
+        "Qlüten",
+        "Küncüt tumları"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "16",
+      "price": 18.99
+    },
+    {
+      "name": "Dabl Big Tasty™ (Ət)",
+      "image": "https://mcdonalds.az/images/7a4aa9c08a443a3940070f6f49b3e0af.png",
+      "description": "Həcmli küncütlü bulka arasında 2 ədəd böyük, 100% mal ətindən döyülmüş bifşteks olan burger. Üç dilim Emmental pendiri, iki dilim təzə pomidor, Aysberq salatı, təzə soğan və “Qril” sousu ona xüsusi dad verir.",
+      "allergen": [
+        "Süd",
+        "Yumurta",
+        "Qlüten",
+        "Küncüt tumları"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "17",
+      "price": 15.99
+    },
+    {
+      "name": "Sezar Roll",
+      "image": "https://mcdonalds.az/images/65ff4f0be1651e8a897f635ca8fc48d6.jpg",
+      "description": "Lavaşda Sezar sousun əlavəsi ilə suxarıya batırılmış, qızardılmış toyuq kotleti, Aysberq salatı, təzə pomidor dilimi və ovulmuş bərk pendir. ",
+      "allergen": [
+        "Xardal",
+        "Süd",
+        "Yumurta",
+        "Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "18",
+      "price": 12.99
+    },
+    {
+      "name": "McChicken™",
+      "image": "https://mcdonalds.az/images/a4daa7dd0522cd28d8a4bd148d5721c2.png",
+      "description": "Karamelləşdirilmiş bulkanın arasında suxarıya batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və xüsusi McChicken™ sousu.",
+      "allergen": [
+        "Xardal",
+        "Kərəviz",
+        "Yumurta",
+        "Qlüten",
+        "Küncüt tumları"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "19",
+      "price": 9.99
+    },
+    {
+      "name": "Dabl McChicken™",
+      "image": "https://mcdonalds.az/images/2f32b3ec9f8a03bcf9577df2e1b58830.png",
+      "description": "Karamelləşdirilmiş bulkanın arasında suxarıya batırılmış, qızardılmış iki toyuq kotleti, təzə Aysberq salatı və xüsusi McChicken™ sousu.",
+      "allergen": [
+        "Xardal",
+        "Kərəviz",
+        "Yumurta",
+        "Qlüten",
+        "Küncüt tumları"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "20",
+      "price": 12.99
+    },
+    {
+      "name": "Çikenburger",
+      "image": "https://mcdonalds.az/images/e2ae3bbc9f9fba3a4b4e2e1770880023.png",
+      "description": "Təzə kahı və xüsusi McChicken® sousu ilə dadlandırılmış və karamelli bulkada verilən suxarıya batırılmış qızardılmış toyuq kotleti.",
+      "allergen": [
+        "Xardal",
+        "Yumurta",
+        "Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "21",
+      "price": 6.99
+    },
+    {
+      "name": "Dabl Çikenburger",
+      "image": "https://mcdonalds.az/images/9aa2f9fa20aae642106f6803d08ca386.png",
+      "description": "Təzə kahı və xüsusi McChicken™ sousu ilə dadlandırılmış və karamelli bulkada verilən suxarıya batırılmış qızardılmış toyuq kotleti.",
+      "allergen": [
+        "Xardal",
+        "Yumurta",
+        "Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "22",
+      "price": 8.99
+    },
+    {
+      "name": "Filet-O-Fish™",
+      "image": "https://mcdonalds.az/images/4e4af6b5506f1a3524f34301ad632fce.png",
+      "description": "İsti, yumşaq bulkanın arasında yaxşıca qızardılmış balıq filesi (xordalılar sinfi), yarım dilim Çedder pendiri və Tar-Tar sousu.",
+      "allergen": [
+        "Xardal",
+        "Süd",
+        "Soya",
+        "Yumurta",
+        "Balıq",
+        "Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "23",
+      "price": 5.99
+    },
+    {
+      "name": "Dabl Filet-O-Fish™",
+      "image": "https://mcdonalds.az/images/f2ec04b4074f5c4dde9e33149648cfbf.png",
+      "description": "İsti yumşaq bulkanın arasında yaxşıca qızardılmış iki tikə balıq filesi (treskakimilər sinfi), 2 kiçik dilim Çedder pendiri və Tar-Tar sousu.",
+      "allergen": [
+        "Xardal",
+        "Süd",
+        "Soya",
+        "Yumurta",
+        "Balıq",
+        "Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 1,
+      "id": "24",
+      "price": 7.99
+    },
+    {
+      "name": "burger",
+      "description": "new burger",
+      "id": "oV9sfUZ"
+    }
+  ],
+  "categories": [
+    {
+      "name": "burgers",
+      "id": "1"
+    },
+    {
+      "name": "drinks",
+      "id": "2"
+    },
+    {
+      "name": "happymeal",
+      "id": "3"
+    },
+    {
+      "name": "snacks",
+      "id": "4"
+    },
+    {
+      "name": "salads",
+      "id": "5"
+    },
+    {
+      "name": "sauces",
+      "id": "6"
+    },
+    {
+      "name": "sweets",
+      "id": "7"
+    },
+    {
+      "name": "hotdrinks",
+      "id": "8"
+    },
+    {
+      "name": "mccafe",
+      "id": "9"
+    }
+  ],
+  "users": [
+    {
+      "name": "Ayan",
+      "password": "123",
+      "agreement": true,
+      "Basket": [],
+      "wishlist": [],
+      "balance": 100,
+      "IsAdmin": true,
+      "id": "1"
+    },
+    {
+      "name": "Şahanə",
+      "password": "123",
+      "Basket": [],
+      "wishlist": [],
+      "balance": 100,
+      "IsAdmin": true,
+      "id": "2"
+    },
+    {
+      "name": "Nahid",
+      "password": "123",
+      "Basket": [],
+      "wishlist": [],
+      "balance": 100,
+      "IsAdmin": true,
+      "id": "3"
+    },
+    {
+      "name": "name 4",
+      "password": "password 4",
+      "Basket": [],
+      "wishlist": [],
+      "balance": 100,
+      "IsAdmin": false,
+      "id": "4"
+    },
+    {
+      "name": "name 5",
+      "password": "password 5",
+      "Basket": [],
+      "wishlist": [],
+      "balance": 100,
+      "IsAdmin": false,
+      "id": "5"
+    },
+    {
+      "name": "name 6",
+      "password": "password 6",
+      "Basket": [],
+      "wishlist": [],
+      "balance": 100,
+      "IsAdmin": false,
+      "id": "6"
+    },
+    {
+      "name": "name 7",
+      "password": "password 7",
+      "Basket": [],
+      "wishlist": [],
+      "balance": 100,
+      "IsAdmin": false,
+      "id": "7"
+    },
+    {
+      "name": "name 8",
+      "password": "password 8",
+      "Basket": [],
+      "wishlist": [],
+      "balance": 100,
+      "IsAdmin": false,
+      "id": "8"
+    },
+    {
+      "name": "name 9",
+      "password": "password 9",
+      "Basket": [],
+      "wishlist": [],
+      "balance": 100,
+      "IsAdmin": false,
+      "id": "9"
+    },
+    {
+      "name": "name 10",
+      "password": "password 10",
+      "balance": 100,
+      "agreement": true,
+      "Basket": [],
+      "wishlist": [],
+      "IsAdmin": false,
+      "id": "10"
+    },
+    {
+      "name": "Ali",
+      "password": "ali123",
+      "balance": "230",
+      "agreement": true,
+      "IsAdmin": false,
+      "basket": [],
+      "wishlist": [],
+      "id": "opnxUd3"
+    },
+    {
+      "name": "ali",
+      "password": "ali123",
+      "balance": "230",
+      "agreement": true,
+      "admin": false,
+      "basket": [],
+      "wishlist": [],
+      "id": "m83uBxj"
+    },
+    {
+      "name": "Aysel",
+      "password": "aysel",
+      "balance": "200",
+      "agreement": true,
+      "isAdmin": false,
+      "basket": [],
+      "wishlist": [],
+      "id": "4b2w0aO"
+    },
+    {
+      "id": 14,
+      "name": "hello",
+      "password": "12345"
+    },
+    {
+      "id": 15,
+      "name": "gcghfgh",
+      "password": "ytfty"
+    },
+    {
+      "id": 16,
+      "name": "",
+      "password": "Esmer"
+    },
+    {
+      "name": "qurban",
+      "password": "qurban",
+      "balance": "qurban",
+      "agreement": true,
+      "isAdmin": false,
+      "basket": [],
+      "wishlist": [],
+      "id": "xnmsn50"
+    },
+    {
+      "id": 18,
+      "name": "qurban",
+      "password": "qurban"
+    },
+    {
+      "id": 19,
+      "name": "",
+      "password": ""
+    },
+    {
+      "id": "DlfRjRw",
+      "name": "asmar",
+      "password": "asmar",
+      "balance": "2300",
+      "agreement": true,
+      "isAdmin": false,
+      "basket": [],
+      "wishlist": []
+    },
+    {
+      "id": "Ho-deaR",
+      "name": "Elnur",
+      "password": "elnur",
+      "balance": "230",
+      "agreement": true,
+      "isAdmin": false,
+      "basket": [],
+      "wishlist": []
+    },
+    {
+      "name": "newmeal",
+      "id": "CTDcZC2"
+    },
+    {
+      "name": {
+        "name": "newmeal",
+        "id": "CTDcZC2"
+      },
+      "id": "i-TgGYr"
+    }
+  ]
+}
