@@ -1,8 +1,7 @@
 import { Container, Grid } from "@mui/material";
 import React, { useState } from "react";
 import "./../../style/sass/meals.scss";
-import { Link } from "react-router-dom";
-import { useParams } from "react-router-dom";
+import { Link,useParams } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
 import { Button } from "@mui/material";
@@ -19,7 +18,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import "./../../style/sass/meals.scss";
 import { current } from "@reduxjs/toolkit";
-function Meals() {
+function Drinks() {
   let [meals, setMeal] = useState([]);
 
   const dispatch = useDispatch();
@@ -34,10 +33,10 @@ function Meals() {
     if (favinlocal) {
       dispatch(addToFavorite(JSON.parse(favinlocal))); 
     }
-    axios(`http://localhost:3000/meals?categoryID=1`).then((res) => {
+    axios(`http://localhost:3000/meals?categoryID=2`).then((res) => {
       setMeal(res.data);
     });
-  }, [dispatch,categoryId]);
+  }, [dispatch]);
   const currentUser = useSelector((state) => state.login.currentUser);
 
   let [fav, setFav] = useState([]);
@@ -69,7 +68,7 @@ function Meals() {
                     src="https://mcdonalds.az/images/5d61dc895b83f47eafc0f6cbfb353bad.png"
                     alt=""
                   />
-                  <h4><Link to="/meals">Burgerlər</Link></h4>
+                  <h4>Burgerlər</h4>
                 </div>
 
                 <div className="sortdiv">
@@ -87,7 +86,7 @@ function Meals() {
                     src="https://mcdonalds.az/images/867cff5309d79402a604b6b8b6f6fcce.jpg"
                     alt=""
                   />
-                  <h4><Link to="/happymeal">Happy Meal</Link></h4>
+                  <h4>Happy Meal</h4>
                 </div>
 
                 <div className="sortdiv">
@@ -96,7 +95,7 @@ function Meals() {
                     src="https://mcdonalds.az/images/d53a391310a492a79740d611bbfd53b9.jpg"
                     alt=""
                   />
-                  <h4><Link to="/snacks">Qəlyanaltılar</Link></h4>
+                  <h4>Qəlyanaltılar</h4>
                 </div>
 
                 <div className="sortdiv">
@@ -105,7 +104,7 @@ function Meals() {
                     src="https://mcdonalds.az/images/5226794fdd6873f66f37ae0397286b8c.png"
                     alt=""
                   />
-                  <h4><Link to="/salads">Salatlar</Link></h4>
+                  <h4>Salatlar</h4>
                 </div>
 
                 <div className="sortdiv">
@@ -114,7 +113,7 @@ function Meals() {
                     src="https://mcdonalds.az/images/5465ab8529156a71e76c3d569863862b.png"
                     alt=""
                   />
-                  <h4><Link to="/sauces">Souslar</Link></h4>
+                  <h4>Souslar</h4>
                 </div>
 
                 <div className="sortdiv" style={{ display: "flex" }}>
@@ -123,7 +122,7 @@ function Meals() {
                     src="https://mcdonalds.az/images/fed86781205af0e755e7553dbf0da55b.jpg"
                     alt=""
                   />
-                  <h4><Link to="/sweets">Şirniyyat və kokteyllər</Link></h4>
+                  <h4>Şirniyyat və kokteyllər</h4>
                 </div>
 
                 <div className="sortdiv" style={{ display: "flex" }}>
@@ -132,7 +131,7 @@ function Meals() {
                     src="https://mcdonalds.az/images/decdafe4e7aa96fbb17420635b19eec3.jpg"
                     alt=""
                   />
-                  <h4><Link to="/hotdrinks">İsti içkilər</Link></h4>
+                  <h4>İsti içkilər</h4>
                 </div>
 
                 <div className="sortdiv">
@@ -141,14 +140,14 @@ function Meals() {
                     src="https://mcdonalds.az/images/879d7da33c37647f84a6a22e87c658b3.png"
                     alt=""
                   />
-                  <h4><Link to="/mccafe">Mc Cafe®</Link></h4>
+                  <h4>Mc Cafe®</h4>
                 </div>
               </div>
             </div>
           </Grid>
           <Grid item xs={10}>
             <div className="cards">
-              <h1 className="cardsmealheading">Burgerlər</h1>
+              <h1 className="cardsmealheading">İçkilər</h1>
               <Grid container spacing={2}>
                 {meals &&
                   meals.map((meal) => {
@@ -240,4 +239,4 @@ function Meals() {
   );
 }
 
-export default Meals;
+export default Drinks;

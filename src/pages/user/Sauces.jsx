@@ -1,8 +1,7 @@
 import { Container, Grid } from "@mui/material";
 import React, { useState } from "react";
 import "./../../style/sass/meals.scss";
-import { Link } from "react-router-dom";
-import { useParams } from "react-router-dom";
+import { Link,useParams } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
 import { Button } from "@mui/material";
@@ -19,7 +18,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import "./../../style/sass/meals.scss";
 import { current } from "@reduxjs/toolkit";
-function Meals() {
+function Sauces() {
   let [meals, setMeal] = useState([]);
 
   const dispatch = useDispatch();
@@ -34,10 +33,10 @@ function Meals() {
     if (favinlocal) {
       dispatch(addToFavorite(JSON.parse(favinlocal))); 
     }
-    axios(`http://localhost:3000/meals?categoryID=1`).then((res) => {
+    axios(`http://localhost:3000/meals?categoryID=6`).then((res) => {
       setMeal(res.data);
     });
-  }, [dispatch,categoryId]);
+  }, [dispatch]);
   const currentUser = useSelector((state) => state.login.currentUser);
 
   let [fav, setFav] = useState([]);
@@ -52,7 +51,7 @@ function Meals() {
       <Container>
         <Grid container spacing={2}>
           <Grid item xs={2}>
-            <div className="sidenavs">
+          <div className="sidenavs">
               <div className="sevimliler">
                 <img
                   className="sevimlimg"
@@ -148,7 +147,7 @@ function Meals() {
           </Grid>
           <Grid item xs={10}>
             <div className="cards">
-              <h1 className="cardsmealheading">Burgerlər</h1>
+              <h1 className="cardsmealheading">Souslar</h1>
               <Grid container spacing={2}>
                 {meals &&
                   meals.map((meal) => {
@@ -240,4 +239,4 @@ function Meals() {
   );
 }
 
-export default Meals;
+export default Sauces;

@@ -6,11 +6,12 @@ import Grid from "@mui/system/Unstable_Grid/Grid";
 import { Card, CardMedia, CardContent, Typography, CardActions, } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
-import { addToCart, addToFavorite, clearCart, clearFav } from "../../redux/slices/loginSlice";
+import { addToCart, addToFavorite, clearCart, clearFav, removeFavorite } from "../../redux/slices/loginSlice";
 import { useDispatch, useSelector } from "react-redux";
+import axios from "axios";
 const Wishlist = () => {
   const dispatch = useDispatch()
-  
+  const currentUser = useSelector((state)=> state.login.currentUser)
   const favItems = useSelector(state => {   
     return state.login.wishlist;  
   });
@@ -39,10 +40,14 @@ const Wishlist = () => {
     <Grid item xs={4} key={favItem.id}>
     <Card sx={{ maxWidth: 345 }} style={{marginLeft:50}}>
     <FontAwesomeIcon icon={faHeart} style={{marginLeft:310, color:'red', cursor:"pointer"}} onClick={()=>{
-      const isFavorite = favItems.find(
-        (favItem) => favItem.id === meal.id
-      );
-      dispatch(removeFavorite(favItem));
+      if (currentUser && currentUser.id) {
+        axios.patch(`http://localhost:3000/users/${currentUser.id}`, {
+          wishlist: favItems.filter((item) => item.id !== favItem.id),
+        });
+        
+        localStorage.removeItem("favmeal");
+      }
+      dispatch(removeFavorite(favItem.id));
 
     }} />
    

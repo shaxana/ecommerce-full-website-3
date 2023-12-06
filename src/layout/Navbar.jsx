@@ -74,7 +74,7 @@ function Navbar() {
               </>
 
                 ): (
-               <Link to="/login"><LoginIcon className="login-icon"></LoginIcon></Link>
+               <Link to="/login" onClick={()=>{localStorage.removeItem("loggeduser")}}><LoginIcon className="login-icon"></LoginIcon></Link>
 
                 )}
                  <Link to="/wishlist"> <FavoriteIcon className="fav-icon1" ></FavoriteIcon></Link>

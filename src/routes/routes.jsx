@@ -14,6 +14,14 @@ import Cart from "../pages/user/Cart";
 import Wishlist from "../pages/user/Wishlist";
 import Users from "../pages/admin/Users";
 import Profile from "../pages/user/Profile";
+import Drinks from "../pages/user/Drinks";
+import HappyMeal from "../pages/user/HappyMeal";
+import HotDrinks from "../pages/user/HotDrinks";
+import McCafe from "../pages/user/McCafe";
+import Salads from "../pages/user/Salads";
+import Sauces from "../pages/user/Sauces";
+import Sweets from "../pages/user/Sweets";
+import Snacks from "../pages/user/Snacks";
 
 const routes = [
   {
@@ -27,6 +35,37 @@ const routes = [
       {
         path: "/meals",
         element: <Meals />,
+      },{
+        path: "/drinks",
+        element: <Drinks />,
+      },
+      {
+        path: "/happymeal",
+        element: <HappyMeal />,
+      },
+      {
+        path: "/hotdrinks",
+        element: <HotDrinks />,
+      },
+      {
+        path: "/mccafe",
+        element: <McCafe />,
+      },
+      {
+        path: "/salads",
+        element: <Salads />,
+      },
+      {
+        path: "/sauces",
+        element: <Sauces />,
+      },
+      {
+        path: "/sweets",
+        element: <Sweets />,
+      },
+      {
+        path: "/snacks",
+        element: <Snacks />,
       },
       {
         path: "/meals/:id",

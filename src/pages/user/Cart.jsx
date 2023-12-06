@@ -8,16 +8,17 @@ import { Card, CardMedia, CardContent, Typography, CardActions, } from "@mui/mat
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, clearCart, increaseCount, removeFromCart, decreaseCount, updateUserBalance} from "../../redux/slices/loginSlice";
 import { buyMeal } from "../../redux/slices/cartSlice";
-
+import axios from "axios";
 const Cart = () => {
   const {
     isEmpty,
     items,
-    cartTotal,
+    
     updateItemQuantity,
     removeItem,
     // emptyCart,
   } = useCart();
+  let cartTotal=0
   const dispatch = useDispatch()
   const cartItems = useSelector((state)=>{
      return state.login.cart;
@@ -38,6 +39,7 @@ const Cart = () => {
       <Grid container spacing={2}>
         {cartItems.map((cartItem)=>{
     let sum = cartItem.count * cartItem.price
+    cartTotal += sum
 
 return <Grid item xs={4} key={cartItem.id}>
 <Card sx={{ maxWidth: 345 }} style={{marginLeft:50}} >
@@ -73,9 +75,19 @@ return <Grid item xs={4} key={cartItem.id}>
     
 <div className="buttons" style={{display:"flex"}}>
 <Button style={{backgroundColor:'gold', padding:10, width:100, border:"none", borderRadius:8 , marginLeft:200, marginBottom:10, cursor:"pointer"}} size="small"
-      onClick={()=>{
-        console.log('Delete button clicked')
+      onClick={(e)=>{
+        e.stopPropagation()
+        
+        if (currentUser && currentUser.id){
+          axios.patch(`http://localhost:3000/users/${currentUser.id}`,{
+            basket: cartItems.filter((item)=> item.id !== cartItem.id)
+          })
+          localStorage.removeItem("cartmeal")
+        }
         dispatch(removeFromCart(cartItem))
+
+        console.log('Delete button clicked')
+        
       }}> Delete</Button>
 
 
