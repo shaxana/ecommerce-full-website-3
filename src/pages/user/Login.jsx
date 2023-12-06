@@ -50,9 +50,9 @@ function Login() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Grid container component="main" sx={{ height: "100vh" }}>
+      <Grid   container component="main" sx={{ height: "100vh" }} >
         <CssBaseline />
-        <Grid
+        <Grid 
           item
           xs={false}
           sm={4}
@@ -70,8 +70,10 @@ function Login() {
             backgroundPosition: "center",
           }}
         />
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+        <Grid      item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <Box
+       
+        
             sx={{
               position: 'relative',
               // backgroundImage: "url(https://images.pexels.com/photos/18792340/pexels-photo-18792340/free-photo-of-burger-with-christmas-ornaments-and-a-sparkler.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
