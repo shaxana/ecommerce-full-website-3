@@ -376,6 +376,595 @@
       "categoryID": 1,
       "id": "24",
       "price": 7.99
+    }
+    ,{
+      "name": "Limonad Qreypfrut",
+      "image": "https://mcdonalds.az/images/ea60d31564bb3fc343d5ba555cc5270d.png",
+      "description": "Qreypfrut dadlı sərinləşdirici qazlı içki.",
+      "allergen": [
+        
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 2,
+      "id": "25",
+      "price": 7.99
+    },
+    {
+      "name": "Limonad Çiyələk",
+      "image": "https://mcdonalds.az/images/fb4564392f6684808edbe80fb1a45bd8.png",
+      "description": "Çiyələk dadlı sərinləşdirici qazlı içki.",
+      "allergen": [
+        
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 2,
+      "id": "26",
+      "price": 6.99
+    },
+    {
+      "name": "Coca Cola",
+      "image": "https://mcdonalds.az/images/b0b6ccead20733ccb9178e401b31f3a2.png",
+      "description": "Sərinləşdirici içki.",
+      "allergen": [
+        
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 2,
+      "id": "27",
+      "price": 2.99
+    },
+    {
+      "name": "Fanta",
+      "image": "https://mcdonalds.az/images/6dd022fdbe849eca517163d9f28c9b3d.png",
+      "description": "Sərinləşdirici içki.",
+      "allergen": [
+        
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 2,
+      "id": "28",
+      "price": 2.99
+    },
+    {
+      "name": "Sprite",
+      "image": "https://mcdonalds.az/images/4a2de9ff7e4216dc7c55d703659f0dcc.png",
+      "description": "Sərinləşdirici içki.",
+      "allergen": [
+        
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 2,
+      "id": "29",
+      "price": 2.99
+    },
+    {
+      "name": "Qazlı su",
+      "image": "https://mcdonalds.az/images/27b515ddaab8e675d5a5cae3733462d0.png",
+      "description": "Sərinləşdirici içki.",
+      "allergen": [
+        
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 2,
+      "id": "30",
+      "price": 1.99
+    },
+    {
+      "name": "Qazlı su",
+      "image": "https://mcdonalds.az/images/27b515ddaab8e675d5a5cae3733462d0.png",
+      "description": "Sərinləşdirici içki.",
+      "allergen": [
+        
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 2,
+      "id": "30",
+      "price": 1.99
+    },
+    {
+      "name": "burger",
+      "description": "new burger",
+      "id": "oV9sfUZ"
+    } ,{
+      "name": "Happy Meal™ (Çizburger ilə)",
+      "image": "https://mcdonalds.az/images/b0b2480240be81e591cc8789f8df34c6.png",
+      "description": "Happy Meal əsas yemək, içki, əlavə yemək və 1 oyuncaqdan ibarətdir. Əsas yemək seçimi: Çizburger; İçki seçimi: Ice Tea, meyvə şirəsi, içki 0,25l; Əlavə yemək seçimi: kiçik kartof fri və ya alma.",
+      "allergen": [
+        "Xardal", "Süd", "Soya", "Yumurta", "Qlüten."
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 3,
+      "id": "31",
+      "price": 7.99
+    }
+    ,{
+      "name": "Happy Meal™ (Çiken McNuggets ilə)      ",
+      "image": "https://mcdonalds.az/images/da9f2eb0a2233c4cd526c483bba3ed4e.png",
+      "description": "Happy Meal əsas yemək, içki, əlavə yemək və 1 oyuncaqdan ibarətdir. Əsas yemək seçimi: Çiken McNuggets (4 ədəd); İçki seçimi: Ice Tea, meyvə şirəsi, içki 0,25l; Əlavə yemək seçimi: kiçik kartof fri və ya alma.",
+      "allergen": [
+         "Kərəviz", "Qlüten."
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 3,
+      "id": "32",
+      "price": 7.99
+    }
+    ,{
+      "name": "Happy Meal™ (Çikenburger ilə)    ",
+      "image": "https://mcdonalds.az/images/a045b0fae1ccb57585175bdb27fab9ff.png",
+      "description": "Happy Meal əsas yemək, içki, əlavə yemək və 1 oyuncaqdan ibarətdir. Əsas yemək seçimi: Çikenburger; İçki seçimi: Ice Tea, meyvə şirəsi, içki 0,25l; Əlavə yemək seçimi: kiçik kartof fri və ya alma.",
+      "allergen": [
+         "Xardal","Yumurta", "Qlüten."
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 3,
+      "id": "33",
+      "price": 7.99
+    }
+    ,{
+      "name": "Happy Meal™ (Hamburger ilə)    ",
+      "image": "https://mcdonalds.az/images/6bf7e5f79643675766a649c2c542484d.png",
+      "description": "Happy Meal əsas yemək, içki, əlavə yemək və 1 oyuncaqdan ibarətdir. Əsas yemək seçimi:  Hamburger; İçki seçimi: Ice Tea, meyvə şirəsi, içki 0,25l; Əlavə yemək seçimi: kiçik kartof fri və ya alma.",
+      "allergen": [
+         "Xardal", "Qlüten."
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 3,
+      "id": "34",
+      "price": 7.99
+    }
+    ,{
+      "name": "   Çiken McNuggets    ",
+      "image": "https://mcdonalds.az/images/3fc7ffafe2014a470c7c048ed9bf89af.png",
+      "description": "Fritürda, unda qızardılmış xırçıldayan toyuq filesinin dilimləri.",
+      "allergen": [
+         "Kərəviz", "Qlüten."
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 4,
+      "id": "35",
+      "price": 4.99
+    }
+    ,{
+      "name": "  Frenç Frayz   ",
+      "image": "https://mcdonalds.az/images/40b3007ef474215e514f44edc6a6eb45.png",
+      "description": "Fritürda qızılı rəngədək qızardılmış və bir balaca duzlanmış xırçıldayan kartof çubuqları.",
+      "allergen": [
+      
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 4,
+      "id": "36",
+      "price": 2.99
+    }
+    ,{
+      "name": " Kənd kartofu   ",
+      "image": "https://mcdonalds.az/images/954f79cf35a4bdbfa2c11a47eb8e73bb.png",
+      "description": "İştahalı və dadlı, fritürda qızardılmış ədviyyatlı kartof dilimləri.",
+      "allergen": [
+      
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 4,
+      "id": "37",
+      "price": 2.99
+    }
+    ,{
+      "name": " Kənd kartofu   ",
+      "image": "https://mcdonalds.az/images/806e65fd0098f57175341b08850a650c.jpg",
+      "description": "İştahalı və dadlı, fritürda qızardılmış ədviyyatlı kartof dilimləri.",
+      "allergen": [
+      
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 4,
+      "id": "38",
+      "price": 2.99
+    }
+    ,{
+      "name": " Soğan halqaları      ",
+      "image": "https://mcdonalds.az/images/52ccdb7a70ebe633f9d3e97f441ad228.png",
+      "description": "Unda qızardılmış təzə soğan dilimləri.",
+      "allergen": [
+      
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 4,
+      "id": "39",
+      "price": 3.99
+    }
+    ,{
+      "name": " Krevetlər ",
+      "image": "https://mcdonalds.az/images/52f9e9349ac667ed3f431e8566726427.png",
+      "description": "Fritürda, unda qızardılmış xırçıldayan krevet. 1000 ada sousu ilə təqdim olunur",
+      "allergen": [
+        "Soya", "Balıq", "Qlüten."
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 4,
+      "id": "40",
+      "price": 5.99
+    }
+    ,{
+      "name": " Çiken Bayts (10 əd.)",
+      "image": "https://mcdonalds.az/images/ba16eaee9684ab590835526298a0d9dc.png",
+      "description": "Fritürda, unda qızardılmış xırçıldayan acılı toyuq filesinin dilimləri.",
+      "allergen": [
+        "Süd", "Qlüten", "Kərəviz", "Yumurta."
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 4,
+      "id": "41",
+      "price": 4.99
+    }
+    ,{
+      "name": "Tərəvəz salatı",
+      "image": "https://mcdonalds.az/images/60152a7498737ab8ed84deada4801487.png",
+      "description": "Təzə salat miksi, çeri pomidorları, parmezan pendiri və zeytun.",
+      "allergen": [
+        "Süd", "Yumurta"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 5,
+      "id": "42",
+      "price": 4.99
+    }
+    ,{
+      "name": "Krevetli Sezar",
+      "image": "https://mcdonalds.az/images/a038b2bfc3f65d59d8c1c3ad49910756.png",
+      "description": "Qızardırılmış krevetlər, təzə qarışıq salat, çeri pomidorları və parmezan pendiri.",
+      "allergen": [
+        "Süd", "Yumurta","Xərçəng kimilər"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 5,
+      "id": "43",
+      "price": 7.99
+    }
+    ,{
+      "name": "Toyuqlu Sezar",
+      "image": "https://mcdonalds.az/images/0e67a8b1d0033f4a1b26b57f236ed35d.png",
+      "description": "Qızardırılmış toyuq filesi, təzə qarışıq salat, çeri pomidorları və parmezan pendiri.",
+      "allergen": [
+        "Süd", "Yumurta","Kərəviz"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 5,
+      "id": "44",
+      "price": 7.99
+    }
+    ,{
+      "name": "Barbekyu sousu",
+      "image": "https://mcdonalds.az/images/b2dc67b39489fd69fd5f77a44c56e3f5.png",
+      "description": "İştahaçan, ədviyyatlı sous.",
+      "allergen": [
+        "Xardal","Kərəviz"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 6,
+      "id": "45",
+      "price": 0.99
+    }
+    ,{
+      "name": "Kokteyl Sous",
+      "image": "https://mcdonalds.az/images/87bde46b7a061c434175d8bf9bb8fea1.png",
+      "description": "Zəngin dadlı iştahaçan sous.",
+      "allergen": [
+        "Xardal","Kərəviz", "Süd","Yumurta"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 6,
+      "id": "46",
+      "price": 0.99
+    }
+    ,{
+      "name": "Sezar sous",
+      "image": "https://mcdonalds.az/images/901ce4e7980201578b556a7873a07d0a.png",
+      "description": "",
+      "allergen": [
+        "Süd","Yumurta"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 6,
+      "id": "47",
+      "price": 0.99
+    }
+    ,{
+      "name": "  “House” sous",
+      "image": "https://mcdonalds.az/images/6a3a8dae066d83e9d0fb6f098f437436.png",
+      "description": "",
+      "allergen": [
+       "Xardal",  "Süd","Yumurta","Kərəviz"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 6,
+      "id": "48",
+      "price": 0.99
+    }
+    ,{
+      "name": " Ketçup",
+      "image": "https://mcdonalds.az/images/eac44c2cd564198a9025c9503eef5432.png",
+      "description": "İştahalı tomat sousu.",
+      "allergen": [
+      "Kərəviz"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 6,
+      "id": "49",
+      "price": 0.99
+    }
+    ,{
+      "name": "Pendirli sous",
+      "image": "https://mcdonalds.az/images/042911bec30300dcc2e5ff2eba20f039.jpg",
+      "description": "Pendirdən hazırlanmış nəfis dadlı sous.",
+      "allergen": [
+        "Süd", "Yumurta", "Sulfar dioksid"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 6,
+      "id": "50",
+      "price": 0.99
+    }
+    ,{
+      "name": "McFlurry™ (Albalı Kit-Kat™)",
+      "image": "https://mcdonalds.az/images/fbc21a433ba3387a1ce2e235c58a3e7e.png",
+      "description": "Kit-Kat™ və Albalı əlavəli, təbii, üzlü süddən hazırlanmış yumşaq qaymaqlı dondurma.",
+      "allergen": [
+        "Fındıq", "Süd", "Soya", "Qlüten."
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 7,
+      "id": "51",
+      "price": 4.99
+    }
+    ,{
+      "name": " MakSandey Dondurması (Albalı)",
+      "image": "https://mcdonalds.az/images/3c3dec3a203f45aeb41aca1d04c52713.png",
+      "description": "Təbii, üzlü süddən hazırlanmış albalı dolğulu dondurma.",
+      "allergen": [
+        "Süd", "Soya", "Qlüten."
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 7,
+      "id": "52",
+      "price": 4.99
+    }
+    ,{ 
+      "name": "   Südlü Kokteyl (Banan)   ",
+      "image": "https://mcdonalds.az/images/bba4e8fce3a9ad9832aa3d582db8c5c4.png",
+      "description": "Yüksək keyfiyyətli, təzə süd və sirop qarışığından hazırlanmış qatı və ətirli kokteyl.",
+      "allergen": [
+        "Süd"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 7,
+      "id": "53",
+      "price": 4.99
+    }
+    ,{ 
+      "name": "     McFlurry™ (Karamel Kit-Kat™)   ",
+      "image": "https://mcdonalds.az/images/0b3cab343d7066832b02cee9c6f69eaf.png",
+      "description": "Kit-Kat™- karamelli, təbii, üzlü süddən hazırlanmış yumşaq qaymaqlı dondurma.",
+      "allergen": [
+        "Süd","Fındıq","Soya","Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 7,
+      "id": "54",
+      "price": 4.99
+    }
+    ,{ 
+      "name": " McFlurry™ (Çiyələk Kit-Kat™)   ",
+      "image": "https://mcdonalds.az/images/0b3cab343d7066832b02cee9c6f69eaf.png",
+      "description": "Kit-Kat™ və Çiyələk əlavəli, təbii, üzlü süddən hazırlanmış yumşaq qaymaqlı dondurma.",
+      "allergen": [
+        "Süd","Fındıq","Soya","Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 7,
+      "id": "55",
+      "price": 4.99
+    }
+    ,{ 
+      "name": " McFlurry™ (Kit-Kat™)   ",
+      "image": "https://mcdonalds.az/images/0b3cab343d7066832b02cee9c6f69eaf.png",
+      "description": "Şokolad (Kit-Kat™ ilə) əlavəli, təbii, üzlü süddən hazırlanmış yumşaq qaymaqlı dondurma. ",
+      "allergen": [
+        "Süd","Fındıq","Soya","Qlüten"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 7,
+      "id": "56",
+      "price": 4.99
+    }
+    ,{ 
+      "name": " Çay",
+      "image": "https://mcdonalds.az/images/69ee071d4bb07fba16f1b6a94f51438c.png",
+      "description": " ",
+      "allergen": [
+       
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 8,
+      "id": "57",
+      "price": 5.99
+    }
+    ,{ 
+      "name": " Dabl Espresso",
+      "image": "https://mcdonalds.az/images/2235bff795ebbed0fe4e7b267cfd7d64.jpg",
+      "description": " Heç bir əlavə olmadan üyüdülmüş qəhvəli filtrdan təzyiq altında qaynar suyun keçməsi nəticəsində alınan qəhvə içkisi. McDonald’s-da yalnız  “Paulig” şirkətinin seçilmiş və təzə üyüdülmüş qəhvəsindən istifadə olunur.",
+      "allergen": [
+       
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 8,
+      "id": "58",
+      "price": 5.99
+    }
+    ,{ 
+      "name": "Qəhvə",
+      "image": "https://mcdonalds.az/images/86a64dec13b990904e28e024036fd338.jpg",
+      "description": " Paulig şirkətinin istehsalı olan seçilmiş, təzə üyüdülmüş və qovrulmuş qara qəhvə.",
+      "allergen": [
+       
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 8,
+      "id": "59",
+      "price": 5.99
+    }
+    ,{ 
+      "name": "Latte",
+      "image": "https://mcdonalds.az/images/039ba467bfb9bfcc66f4795b0d199b5f.jpg",
+      "description": " Təzə, üzlü süd ilə espressonun dadlı qarışığı. McDonald’s da yalnız “Paulig” şirkətinin seçilmiş və təzə üyüdülmüş qəhvəsindən istifadə olunur.",
+      "allergen": [
+       " Süd"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 8,
+      "id": "60",
+      "price": 5.99
+    }
+    ,{ 
+      "name": "Kapuçino (Kiçik)",
+      "image": "https://mcdonalds.az/images/eb92c40b9195aed67ada9e11ec5c9262.png",
+      "description": " Təzə, üzlü və köpüklü süd ilə espressonun dadlı qarışığı. McDonald’s da yalnız “Paulig” şirkətinin seçilmiş və təzə üyüdülmüş qəhvəsindən istifadə olunur.",
+      "allergen": [
+       " Süd"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 8,
+      "id": "61",
+      "price": 5.99
+    }
+    ,{ 
+      "name": "İsti şokolad(Kiçik)",
+      "image": "https://mcdonalds.az/images/1cb8de5ac79bbd284643fd864bf333ce.jpg",
+      "description": " İsti Şokolad – südün əlavəsi ilə təbii kakao əsasında hazırlanmış dadlı içkidir.",
+      "allergen": [
+       " Süd"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 8,
+      "id": "62",
+      "price": 5.99
+    }
+    ,{ 
+      "name": " Karamelli Frappe",
+      "image": "https://mcdonalds.az/images/761b6c992e3223ce6071b6b199f21f14.png",
+      "description": " Karamel və qəhvə dadına malik dadlı soyuq içki. Üstü çalınmış qaymaq və karamelli sous ilə bəzədilib",
+      "allergen": [
+       " Süd","Fındıq","Soya","Qlüten","Yumurta"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 9,
+      "id": "63",
+      "price": 8.99
+    }
+    ,{ 
+      "name": "Şokoladlı Frappe",
+      "image": "https://mcdonalds.az/images/df28667863274894e86eacfe5404eecc.png",
+      "description": " Südlü və xoş şokolad dadlı soyuq içki.",
+      "allergen": [
+       " Süd","Fındıq","Soya","Qlüten","Yumurta"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 9,
+      "id": "64",
+      "price": 8.99
+    }
+    ,{ 
+      "name": "Smuzi Qaragilə",
+      "image": "https://mcdonalds.az/images/cf49f8e8cd4f429217c6a27707abfec5.png",
+      "description": " McCafé® resepti ilə hazırlanmış qaragiləli smuzi süd və buz ilə qarışdırılmış qaragilə püresi və qaymaqlı yoğurtun ləzzətli birləşməsidir.",
+      "allergen": [
+       " Süd","Fındıq","Soya","Qlüten","Yumurta"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 9,
+      "id": "65",
+      "price": 8.99
+    }
+    ,{ 
+      "name": "Smuzi Marakuya",
+      "image": "https://mcdonalds.az/images/339cafea900b4f2cf6ba3b8e04155d31.png",
+      "description": " McCafé® resepti ilə hazırlanmış marakuyalı smuzi süd və buz ilə qarışdırılmış marakuya püresi və qaymaqlı yoğurtun ləzzətli birləşməsidir.",
+      "allergen": [
+       " Süd","Fındıq","Soya","Qlüten","Yumurta"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 9,
+      "id": "66",
+      "price": 8.99
+    }
+    ,{ 
+      "name": "Çiyələkli Smuzi",
+      "image": "https://mcdonalds.az/images/4052c0f567eece8b6e96c1435fc5bb91.png",
+      "description": " McCafé® resepti ilə hazırlanmış çiyələkli smuzi süd və buz ilə qarışdırılmış çiyələk püresi və qaymaqlı yoğurtun ləzzətli birləşməsidir.",
+      "allergen": [
+       " Süd","Fındıq","Soya","Qlüten","Yumurta"
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 9,
+      "id": "67",
+      "price": 8.99
+    }
+    ,{ 
+      "name": " Amerikano (0.3L)",
+      "image": "https://mcdonalds.az/images/84c1338fc7ce86abede76b38a92fa5d1.jpg",
+      "description": " Rainforest Alliance Certified™ ticarət nişanlı espressomuzun üzərinə qaynar su əlavə etməklə hazırlanan sadə, ətirli Amerikano.",
+      "allergen": [
+      
+      ],
+      "info": [],
+      "size": [],
+      "categoryID": 9,
+      "id": "68",
+      "price": 8.99
     },
     {
       "name": "burger",
