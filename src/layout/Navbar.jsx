@@ -31,7 +31,7 @@ function Navbar() {
             <div className="wholeheader" >
               <div className="top-headers">
                 <div className="language">
-                  <Button><h4>Dil</h4></Button>
+                  <Button><h4>Dil </h4></Button>
                 </div>
                 <div className="email-div" >
                  
@@ -48,7 +48,9 @@ function Navbar() {
                 </div>
                 
               </div>
-              <div className="end-header" style={{display:"flex",justifyContent:"space-between"}}>
+              <div 
+              className="end-header"
+              style={{display:"flex",justifyContent:"space-between"}}>
                 <Button>
                  <Link to="/meals"><h4>Menyumuz</h4></Link>
                 </Button>
@@ -62,9 +64,9 @@ function Navbar() {
                
               </div>
             </div>
-            <button className="header-btn"> <Link to="/profile">Profil</Link></button>
-           
-                 <Link to="/wishlist"> <FavoriteIcon className="fav-icon1" ></FavoriteIcon></Link>
+            <button className="header-btn"> <Link to="/profile"> 
+            
+            Profil</Link></button>
                 {!isLogin ? (
               <>
                <Link to="/login"><LoginIcon className="login-icon"></LoginIcon></Link>
@@ -75,7 +77,11 @@ function Navbar() {
                <Link to="/login"><LoginIcon className="login-icon"></LoginIcon></Link>
 
                 )}
+                 <Link to="/wishlist"> <FavoriteIcon className="fav-icon1" ></FavoriteIcon></Link>
+
                <Link to="/cart" > <ShoppingBasketIcon className="basket-icon"></ShoppingBasketIcon></Link>
+
+              
           </div>
           {/* <div className="profile">
             <div className="user">

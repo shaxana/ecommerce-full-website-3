@@ -1,5 +1,5 @@
-
 import React, { useState } from "react";
+import { Container } from "react-bootstrap";
 import { useSelector } from "react-redux";
 const Profile = () => {
   const currentUser = useSelector((state) => state.login.currentUser);
@@ -10,8 +10,12 @@ const Profile = () => {
   };
 
   return (
-    <div>
+
+   <Container>
+     <div>
       <h2>Profile Page</h2>
+      <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg" alt="" />
+
       {currentUser ? (
         <div>
           <div>
@@ -33,9 +37,11 @@ const Profile = () => {
           </div>
         </div>
       ) : (
-        <p>Please log in to view your profile.</p>
+        <p style={{marginLeft:150}}>Please log in to view your profile.</p>
       )}
+
     </div>
+   </Container>
   );
 };
 

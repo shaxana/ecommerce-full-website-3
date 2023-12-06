@@ -10,28 +10,34 @@
 
 .sevimliler {
   display: flex;
-  border: 1px solid gray;
-  margin-bottom: 20px;
+  margin: 0 auto;
   width: 250px;
-  height: 100px;
+  height: 40px;
 }
 
-Container {
+.sevimliler h4 {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.Container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .sevimlimg {
-  width: 50px;
+  width: 70px;
 }
 
 .sortdiv {
   margin-left: 20;
   display: flex;
 }
-.sortdiv h6 {
-  margin: 0 auto;
+
+.sortdiv h4 {
+  margin-top: 40px;
+  margin-left: 20px;
 }
 
 .meals {
@@ -53,11 +59,6 @@ Container {
 
 .meal-image {
   margin: 0 auto;
-}
-
-.cartButton {
-  margin-left: 300px;
-  background-color: yellow;
 }
 
 .card {

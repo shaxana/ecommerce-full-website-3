@@ -48,7 +48,7 @@
 }
 
 .leftadress h1 {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .rightadress {
@@ -401,7 +401,6 @@
 .adress11 .leftadress p {
   position: relative;
   left: 170px;
-  /* background-color: red; */
 }
 
 .adress11 .rightadress h1 {
@@ -414,7 +413,6 @@
   position: relative;
   left: 124px;
   bottom: 50px;
-  /* background-color: red; */
 }
 
 .adress12 .leftadress h1 {
@@ -426,5 +424,4 @@
 .adress12 .leftadress p {
   position: relative;
   left: 180px;
-  /* background-color: red; */
 }/*# sourceMappingURL=adress.css.map */

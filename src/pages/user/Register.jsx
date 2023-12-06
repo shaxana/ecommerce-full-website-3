@@ -110,6 +110,8 @@ function Register() {
   return (
     <div
       style={{
+        marginTop: -90,
+
         background:
           "url(https://images.pexels.com/photos/11459428/pexels-photo-11459428.jpeg?auto=compress&cs=tinysrgb&w=1600)",
         height: "83vh",
@@ -120,7 +122,11 @@ function Register() {
       }}
     >
       <ThemeProvider theme={defaultTheme}>
-        <Container component="main" maxWidth="xs" style={{ margin: "0 auto" }}>
+        <Container
+          component="main"
+          maxWidth="xs"
+          style={{ margin: "0 auto", padding: "0" }}
+        >
           <CssBaseline />
           <Box
             sx={{

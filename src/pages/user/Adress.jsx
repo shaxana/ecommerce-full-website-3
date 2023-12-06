@@ -15,6 +15,8 @@ function Adress() {
                     <div className="adress1">
                         <div className="leftadress">
                             <h1>Fəvvarələr meydanı</h1><br />
+                            <br />
+                            <br />
                             <p><b>Ünvan: :</b> Bakı şəhəri, Səbail rayonu, Nizami küç., 340-cı məhəllə
                             </p>
                             <p><b> Telefon nömrəsi: </b> <a href="tel:+994 12 498 19 89">+994 12 498 19 89</a> </p>
@@ -26,6 +28,8 @@ function Adress() {
                         </div>
                         <div className="rightadress">
                             <h1>Gənclik</h1> <br />
+                            <br />
+                            <br />
                             <p> <b>Ünvan: </b>  Bakı şəhəri, Nərimanov rayonu, F.X. Xoyski, 830-cu məhəllə
                             </p>
                             <p><b> Telefon nömrəsi:  </b> <a href="tel:+994 12 498 19 89">  +994 12 498 19 89</a> </p>
@@ -38,6 +42,8 @@ function Adress() {
                     <div className="adress2">
                         <div className="leftadress">
                             <h1>Nəriman Nərimanov</h1><br />
+                            <br />
+                            <br />
                             <p><b>Ünvan: :</b>  Bakı şəhəri, Nərimanov rayonu, Təbriz, 1959
 
                             </p>
@@ -49,6 +55,8 @@ function Adress() {
                         </div>
                         <div className="rightadress">
                             <h1>Memar Əcəmi</h1> <br />
+                            <br />
+                            <br />
                             <p> <b>Ünvan: </b>  Bakı şəhəri, Nəsimi rayonu, M.Cəfərov küç., 3005-ci məhəllə
 
                             </p>
@@ -62,6 +70,8 @@ function Adress() {
                     <div className="adress3">
                         <div className="leftadress">
                             <h1>Şüvəlan Park</h1><br />
+                            <br />
+                            <br />
                             <p><b>Ünvan: :</b>  Bakı şəhəri, Xəzər rayonu, Şüvalan ŞTQ, Almas İldırım (Şüvəlan qəs.), ev 68
 
 
@@ -74,6 +84,8 @@ function Adress() {
                         </div>
                         <div className="rightadress">
                             <h1>Əhmədli</h1> <br />
+                            <br />
+                            <br />
                             <p> <b>Ünvan: </b>   Bakı şəhəri, Xətai rayonu, Sarayevo küç., 1e, 2322-ci məhəllə
 
 
@@ -88,6 +100,8 @@ function Adress() {
                     <div className="adress4">
                         <div className="leftadress">
                             <h1>Neftçilər</h1><br />
+                            <br />
+                            <br />
                             <p><b>Ünvan: :</b>   Bakı şəhəri, Nizami rayonu, Qara Qarayev pr., 59b
 
                             </p>
@@ -99,6 +113,8 @@ function Adress() {
                         </div>
                         <div className="rightadress">
                             <h1>28 Mall</h1> <br />
+                            <br />
+                            <br />
                             <p> <b>Ünvan: </b> Bakı şəhəri, Nəsimi rayonu, Azadlıq pr., 15a/4
 
 
@@ -113,6 +129,8 @@ function Adress() {
                     <div className="adress5">
                         <div className="leftadress">
                             <h1>Park Bulvar</h1><br />
+                            <br />
+                            <br />
                             <p><b>Ünvan: :</b>   Bakı şəhəri, Səbail rayonu, Neftçilər pr., Dənizkənarı Milli Park
 
                             </p>
@@ -124,6 +142,8 @@ function Adress() {
                         </div>
                         <div className="rightadress">
                             <h1>Hava limanı</h1> <br />
+                            <br />
+                            <br />
                             <p> <b>Ünvan: </b>  Bakı şəhəri, Xəzər rayonu, Binə ŞTQ, H.Əliyev adına Hava Limanı
                             </p>
                             <p><b> Telefon nömrəsi:  </b> <a href="tel:+994 12 498 19 89">  +994 12 498 19 89</a> </p>
@@ -136,6 +156,8 @@ function Adress() {
                     <div className="adress6">
                         <div className="leftadress">
                             <h1>Gənclik Mall</h1><br />
+                            <br />
+                            <br />
                             <p><b>Ünvan: :</b>   Bakı şəhəri, Nərimanov rayonu, F.X. Xoyski pr., 830-835-cı məhəllə
 
                             </p>
@@ -146,6 +168,8 @@ function Adress() {
                         </div>
                         <div className="rightadress">
                             <h1>Aygun City Mall</h1> <br />
+                            <br />
+                            <br />
                             <p> <b>Ünvan: </b>  Bakı şəhəri, Sabunçu rayonu, Bakıxanov, ŞTQ Gənclik, ev 29
                             </p>
                             <p><b> Telefon nömrəsi:  </b> <a href="tel:+994 12 428 58 14">  +994 12 428 58 14</a> </p>
@@ -156,6 +180,8 @@ function Adress() {
                     <div className="adress7">
                         <div className="leftadress">
                             <h1>Amburan Mall</h1><br />
+                            <br />
+                            <br />
                             <p><b>Ünvan:</b>  Bakı şəhəri, Sabunçu rayonu, Bilgəh ŞTQ, Mərdəkan (Dairə) - Zuğulba-Bilgəh yolu, 11-ci km
                             </p>
                             <p><b> Telefon nömrəsi:  </b>  <a href="tel: + 994 12 505 05 14">+994 12 505 05 14</a> </p>
@@ -168,6 +194,8 @@ function Adress() {
                         </div>
                         <div className="rightadress">
                             <h1>Gəncə Mall</h1> <br />
+                            <br />
+                            <br />
                             <p> <b>Ünvan:</b>Gəncə şəhəri, Heydər Əliyev pr., Həsən Əliyev küçəsi ilə kəsişmənin cənub şərq hissəsi </p>
                             <p><b> Telefon nömrəsi:  </b> <a href="tel:+994 46 450 30 01">  +994 46 450 30 01</a> </p>
                             <p><b>Dine-in:</b>  09:00 – 23:00
@@ -179,6 +207,8 @@ function Adress() {
                     <div className="adress8">
                         <div className="leftadress">
                             <h1>Koroğlu m/s. Bravo hipermarket</h1><br />
+                            <br />
+                            <br />
                             <p><b>Ünvan:</b>   Bakı şəhəri, Nizami rayonu, Heydər Əliyev pr., 172 saylı sahə
 
                             </p>
@@ -194,6 +224,8 @@ function Adress() {
                         </div>
                         <div className="rightadress">
                             <h1>Sahil</h1> <br />
+                            <br />
+                            <br />
                             <p> <b>Ünvan:</b> Bakı şəhəri, Səbail rayonu, Üzeyir Hacıbəyov və Bübül prospektinin kəsişməsi, 207-ci məhəllə, 2-ci giriş
                             </p>
                             <p><b> Telefon nömrəsi:  </b> <a href="tel:+994 12 505 99 01">  +994 12 505 99 01</a> </p>
@@ -208,6 +240,8 @@ function Adress() {
                     <div className="adress9">
                         <div className="leftadress">
                             <h1>20 Yanvar m/s. Bravo hipermarket</h1><br />
+                            <br />
+                            <br />
                             <p><b>Ünvan:</b>  Bakı şəhəri, Nəsimi rayonu Tbilisi pr., 3007
 
 
@@ -226,6 +260,8 @@ function Adress() {
                         </div>
                         <div className="rightadress">
                             <h1>Binəqədi. Bravo supermarket</h1> <br />
+                            <br />
+                            <br />
                             <p> <b>Ünvan:</b> Bakı şəhəri, Binəqədi rayonu, Şövkət Məmmədova, 2
 
                             </p>
@@ -244,6 +280,8 @@ function Adress() {
                     <div className="adress10">
                         <div className="leftadress">
                             <h1>Sumqayıt (Sülh küçəsi)</h1><br />
+                            <br />
+                            <br />
                             <p><b>Ünvan:</b>  Sumqayıt şəhəri, Sülh küçəsi, Bağça Şəhər yaşayış kompleksi, bina 16a
 
                             </p>
@@ -264,6 +302,8 @@ function Adress() {
                         </div>
                         <div className="rightadress">
                             <h1>Dəniz Mall</h1> <br />
+                            <br />
+                            <br />
                             <p> <b>Ünvan:</b>
                                 Bakı şəhəri, Səbail rayonu, Neftçilər Prospekti, 26a
                             </p>
@@ -275,6 +315,8 @@ function Adress() {
                     <div className="adress11">
                         <div className="leftadress">
                             <h1>Grand Hayat</h1><br />
+                            <br />
+                            <br />
                             <p><b>Ünvan:</b>  Bakı şəhəri, Yasamal rayonu, Tbilisi prospekti, 1054-cü məhəllə
                             </p>
                             <p><b>Dine-in: </b> 08:00 – 01:00
@@ -291,6 +333,8 @@ function Adress() {
                         </div>
                         <div className="rightadress">
                             <h1>Blue Residence</h1> <br />
+                            <br />
+                            <br />
                             <p> <b>Ünvan:</b>
                                 Bakı şəhəri, Xətai rayonu, 8 Noyabr prospekti, Nargilə dairəsinin yanı
                             </p>
@@ -304,6 +348,8 @@ function Adress() {
                     <div className="adress12">
                         <div className="leftadress">
                             <h1>Sumqayıt  (Səməd Vurğun küçəsi)</h1><br />
+                            <br />
+                            <br />
                             <p><b>Ünvan:</b>  Sumqayıt şəhəri, Səməd Vurğun küçəsi,  124
 
                             </p>

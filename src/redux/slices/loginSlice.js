@@ -45,6 +45,9 @@ const loginSlice = createSlice({
     clearFav: (state) => {
       state.wishlist = [];
     },
+    updateUserBalance: (state, action) => {
+      state.currentUser.balance = action.payload;
+    },
     increaseCount: (state, action) => {
       if (state.cart.find((item) => item.id === action.payload.id)) {
         state.cart.find((item) => item.id === action.payload.id).count += 1;
@@ -53,7 +56,7 @@ const loginSlice = createSlice({
     decreaseCount: (state, action) => {
       if (
         state.cart.find((item) => item.id === action.payload.id) &&
-        state.cart.find((item) => item.id === action.payload.id).count > 0
+        state.cart.find((item) => item.id === action.payload.id).count > 1
       ) {
         state.cart.find((item) => item.id === action.payload.id).count -= 1;
       }
@@ -72,5 +75,6 @@ export const {
   clearFav,
   increaseCount,
   decreaseCount,
+  updateUserBalance
 } = loginSlice.actions;
 export default loginSlice.reducer;
