@@ -338,4 +338,11 @@ video {
   background-color: red;
   color: white;
   font-weight: bold;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  right: 10px;
+  padding: 30px;
+  color: gold;
 }/*# sourceMappingURL=home.css.map */

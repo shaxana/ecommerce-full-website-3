@@ -14,7 +14,6 @@ const Cart = () => {
   const {
     isEmpty,
     items,
-    
     updateItemQuantity,
     removeItem,
     // emptyCart,
@@ -105,6 +104,25 @@ return <Grid item xs={4} key={cartItem.id}>
  axios.patch(`http://localhost:3000/users/${currentUser.id}`, {
   basket: cartItems.filter((item) => item.id !== cartItem.id),
   balance: newBalance
+
+});
+Swal.fire({
+  title: `Bon Appettit!
+  your balance: ${currentUser.balance}`,
+  showClass: {
+    popup: `
+      animate__animated
+      animate__fadeInUp
+      animate__faster
+    `
+  },
+  hideClass: {
+    popup: `
+      animate__animated
+      animate__fadeOutDown
+      animate__faster
+    `
+  }
 });
   }
   else{

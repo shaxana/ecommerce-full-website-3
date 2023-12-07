@@ -4,7 +4,7 @@ import Register from "../pages/user/Register";
 import Login from "../pages/user/Login";
 import Meals from "../pages/user/Meals";
 import Details from "../pages/user/Details";
-import { Dashboard } from "@mui/icons-material";
+import Dashboard from "../pages/admin/Dashboard";
 import AddMeals from "../pages/admin/AddMeals";
 import MealsPageForAdmin from "../pages/admin/MealsPageForAdmin";
 import AdminRoot from "../pages/admin/AdminRoot";

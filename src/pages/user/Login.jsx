@@ -118,9 +118,16 @@ function Login() {
                   let check = users.find((user) => user.name == values.name && user.password == values.password)
                   if (check) {
                     dispatch(loginSuccess(check));
-                    console.log(isLogin);
+                    console.log(loginSuccess(check));
                     localStorage.setItem("loggeduser", JSON.stringify(check))
-                    navigate("/")
+                    let isAdmin = JSON.parse(localStorage.getItem("loggeduser"))? JSON.parse(localStorage.getItem("loggeduser")).isAdmin : false
+                    console.log(isAdmin);
+                    if (isAdmin){
+                      navigate("/admin")
+                    }
+                    else{
+                      navigate("/")
+                    }
                   }
                   else {
                     alert("user not found")

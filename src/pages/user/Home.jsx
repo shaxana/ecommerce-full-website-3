@@ -15,6 +15,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./../../style/sass/home.scss";
+import { IoChevronForwardCircleOutline, IoChevronBackCircleOutline } from "react-icons/io5";
+  
 
 export default () => {
   return (
@@ -47,6 +49,7 @@ export default () => {
             alt=""
           />
         </SwiperSlide>
+        
         <SwiperSlide>
           <img
             style={{ width: "100%", height: "100%" }}
@@ -61,6 +64,9 @@ export default () => {
             alt=""
           />
         </SwiperSlide>
+          <div className="swiper-button-next"><IoChevronForwardCircleOutline /></div>
+  <div className="swiper-button-prev"> <IoChevronBackCircleOutline />   </div>
+
       </Swiper>
       <div className="container">
         <div className="mc-card">

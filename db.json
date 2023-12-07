@@ -1050,9 +1050,10 @@
       "password": "123",
       "Basket": [],
       "wishlist": [],
-      "balance": 100,
+      "balance": null,
       "IsAdmin": true,
-      "id": "2"
+      "id": "2",
+      "basket": []
     },
     {
       "name": "Nahid",
@@ -1114,25 +1115,10 @@
     {
       "name": "Aysel",
       "password": "aysel",
-      "balance": 2,
+      "balance": null,
       "agreement": true,
       "isAdmin": false,
-      "basket": [
-        {
-          "name": "Hamburger",
-          "image": "https://mcdonalds.az/images/7e2ebc7f8f56fbb9ea6374b5d7ad55e3.png",
-          "description": "Karamelləşdirilmiş bulkanın arasında 100% mal ətindən döyülmüş bifşteks, xardal, ketçup, soğan və duzlu xiyar dilimləri.",
-          "allergen": [
-            "Xardal",
-            "Qlüten"
-          ],
-          "info": [],
-          "size": [],
-          "categoryID": 1,
-          "id": "6",
-          "price": 13.99
-        }
-      ],
+      "basket": [],
       "wishlist": [],
       "id": "4b2w0aO"
     },
@@ -1216,6 +1202,26 @@
       "name": "asd",
       "password": "asd",
       "id": "NxCswDY"
+    },
+    {
+      "name": "Nahid",
+      "password": "nahid",
+      "balance": 234,
+      "agreement": true,
+      "isAdmin": false,
+      "basket": [],
+      "wishlist": [],
+      "id": "_f_d2vH"
+    },
+    {
+      "name": "leyla",
+      "password": "leyla",
+      "balance": 2323.0200000000004,
+      "agreement": true,
+      "isAdmin": false,
+      "basket": [],
+      "wishlist": [],
+      "id": "ehOkTGh"
     }
   ]
 }
