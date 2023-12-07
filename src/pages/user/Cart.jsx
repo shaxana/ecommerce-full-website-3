@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addToCart, clearCart, increaseCount, removeFromCart, decreaseCount, updateUserBalance} from "../../redux/slices/loginSlice";
 import { buyMeal } from "../../redux/slices/cartSlice";
 import axios from "axios";
+import Swal from "sweetalert2";
 const Cart = () => {
   const {
     isEmpty,
@@ -93,9 +94,38 @@ return <Grid item xs={4} key={cartItem.id}>
 
 
 <Button style={{backgroundColor:'gold', padding:10, width:100, border:"none", borderRadius:8 ,marginLeft:10, marginBottom:10, marginRight:10, cursor:"pointer"}} size="small" onClick={()=>{
+ if (currentUser.balance >= cartItem.price){
   dispatch(buyMeal(cartItem))
-  console.log(state.meals);
- dispatch(updateUserBalance( currentUser.balance-= cartItem.price))
+  // console.log(state.meals);
+  console.log(currentUser.balance);
+  if (currentUser.id){
+    let newBalance = currentUser.balance - cartItem.price
+ dispatch(updateUserBalance({id: currentUser.id, balance: newBalance} ))
+
+ axios.patch(`http://localhost:3000/users/${currentUser.id}`, {
+  basket: cartItems.filter((item) => item.id !== cartItem.id),
+  balance: newBalance
+});
+  }
+  else{
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Not enoguh balance!",
+      footer: '<Link  to="/profile">increase balance</Link>'
+    });
+    
+  }
+ }
+ else{
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Not enough balance!",
+    footer: '<Link to="/profile">Increase balance</Link>'
+  });
+  
+}
 }}>Buy</Button>
 
 </div>

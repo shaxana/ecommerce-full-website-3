@@ -239,7 +239,7 @@ function Register() {
                         name="balance"
                         className="inp3"
                         id="balance"
-                        type="text"
+                        type="number"
                         onChange={handleChange}
                         value={values.balance}
                       />

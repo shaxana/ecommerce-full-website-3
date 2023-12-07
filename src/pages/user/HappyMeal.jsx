@@ -165,13 +165,13 @@ function HappyMeal() {
                           <Link to={`/meals/${meal.id}`}>
                             <img
                               src={meal.image}
-                              
+                              height={250}
                               width={300}
                               className="meal-image"
                             />
                             <p className="mealname">{meal.name}</p>
                           </Link>
-                          <Button
+                          <Button style={{ backgroundColor: "#ffbc0d", color: "black", padding: "5px", marginTop: "15px", borderRadius: "7px" }}
                             className="cartButton"
                             onClick={(e) => {
                               e.stopPropagation();

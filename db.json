@@ -1099,7 +1099,7 @@
     {
       "name": "Ali",
       "password": "ali123",
-      "balance": "230",
+      "balance": 230,
       "agreement": true,
       "IsAdmin": false,
       "basket": [],
@@ -1109,7 +1109,7 @@
     {
       "name": "ali",
       "password": "ali123",
-      "balance": "230",
+      "balance": 230,
       "agreement": true,
       "admin": false,
       "basket": [],
@@ -1119,17 +1119,32 @@
     {
       "name": "Aysel",
       "password": "aysel",
-      "balance": "200",
+      "balance": 2,
       "agreement": true,
       "isAdmin": false,
-      "basket": [],
+      "basket": [
+        {
+          "name": "Hamburger",
+          "image": "https://mcdonalds.az/images/7e2ebc7f8f56fbb9ea6374b5d7ad55e3.png",
+          "description": "Karamelləşdirilmiş bulkanın arasında 100% mal ətindən döyülmüş bifşteks, xardal, ketçup, soğan və duzlu xiyar dilimləri.",
+          "allergen": [
+            "Xardal",
+            "Qlüten"
+          ],
+          "info": [],
+          "size": [],
+          "categoryID": 1,
+          "id": "6",
+          "price": 13.99
+        }
+      ],
       "wishlist": [],
       "id": "4b2w0aO"
     },
     {
       "id": 14,
       "name": "hello",
-      "password": "12345"
+      "password": 2345
     },
     {
       "id": 15,
@@ -1144,7 +1159,7 @@
     {
       "name": "qurban",
       "password": "qurban",
-      "balance": "qurban",
+      "balance": 300,
       "agreement": true,
       "isAdmin": false,
       "basket": [],
@@ -1165,7 +1180,7 @@
       "id": "DlfRjRw",
       "name": "asmar",
       "password": "asmar",
-      "balance": "2300",
+      "balance": 250,
       "agreement": true,
       "isAdmin": false,
       "basket": [],
@@ -1175,7 +1190,7 @@
       "id": "Ho-deaR",
       "name": "Elnur",
       "password": "elnur",
-      "balance": "230",
+      "balance": 230,
       "agreement": true,
       "isAdmin": false,
       "basket": [],
@@ -1195,7 +1210,7 @@
     {
       "name": "aydan",
       "password": "aydan",
-      "balance": "1234",
+      "balance": 1234,
       "agreement": true,
       "isAdmin": false,
       "basket": [],

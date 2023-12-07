@@ -51,7 +51,7 @@ function Drinks() {
       <Container>
         <Grid container spacing={2}>
           <Grid item xs={2}>
-            <div className="sidenavs">
+          <div className="sidenavs">
               <div className="sevimliler">
                 <img
                   className="sevimlimg"
@@ -68,7 +68,7 @@ function Drinks() {
                     src="https://mcdonalds.az/images/5d61dc895b83f47eafc0f6cbfb353bad.png"
                     alt=""
                   />
-                  <h4>Burgerlər</h4>
+                  <h4><Link to="/meals">Burgerlər</Link></h4>
                 </div>
 
                 <div className="sortdiv">
@@ -86,7 +86,7 @@ function Drinks() {
                     src="https://mcdonalds.az/images/867cff5309d79402a604b6b8b6f6fcce.jpg"
                     alt=""
                   />
-                  <h4>Happy Meal</h4>
+                  <h4><Link to="/happymeal">Happy Meal</Link></h4>
                 </div>
 
                 <div className="sortdiv">
@@ -95,7 +95,7 @@ function Drinks() {
                     src="https://mcdonalds.az/images/d53a391310a492a79740d611bbfd53b9.jpg"
                     alt=""
                   />
-                  <h4>Qəlyanaltılar</h4>
+                  <h4><Link to="/snacks">Qəlyanaltılar</Link></h4>
                 </div>
 
                 <div className="sortdiv">
@@ -104,7 +104,7 @@ function Drinks() {
                     src="https://mcdonalds.az/images/5226794fdd6873f66f37ae0397286b8c.png"
                     alt=""
                   />
-                  <h4>Salatlar</h4>
+                  <h4><Link to="/salads">Salatlar</Link></h4>
                 </div>
 
                 <div className="sortdiv">
@@ -113,7 +113,7 @@ function Drinks() {
                     src="https://mcdonalds.az/images/5465ab8529156a71e76c3d569863862b.png"
                     alt=""
                   />
-                  <h4>Souslar</h4>
+                  <h4><Link to="/sauces">Souslar</Link></h4>
                 </div>
 
                 <div className="sortdiv" style={{ display: "flex" }}>
@@ -122,7 +122,7 @@ function Drinks() {
                     src="https://mcdonalds.az/images/fed86781205af0e755e7553dbf0da55b.jpg"
                     alt=""
                   />
-                  <h4>Şirniyyat və kokteyllər</h4>
+                  <h4><Link to="/sweets">Şirniyyat və kokteyllər</Link></h4>
                 </div>
 
                 <div className="sortdiv" style={{ display: "flex" }}>
@@ -131,7 +131,7 @@ function Drinks() {
                     src="https://mcdonalds.az/images/decdafe4e7aa96fbb17420635b19eec3.jpg"
                     alt=""
                   />
-                  <h4>İsti içkilər</h4>
+                  <h4><Link to="/hotdrinks">İsti içkilər</Link></h4>
                 </div>
 
                 <div className="sortdiv">
@@ -140,7 +140,7 @@ function Drinks() {
                     src="https://mcdonalds.az/images/879d7da33c37647f84a6a22e87c658b3.png"
                     alt=""
                   />
-                  <h4>Mc Cafe®</h4>
+                  <h4><Link to="/mccafe">Mc Cafe®</Link></h4>
                 </div>
               </div>
             </div>
@@ -148,7 +148,7 @@ function Drinks() {
           <Grid item xs={10}>
             <div className="cards">
               <h1 className="cardsmealheading">İçkilər</h1>
-              <Grid container spacing={2}>
+              <Grid container spacing={2} style={{ justifyContent: 'space-evenly' }}>
                 {meals &&
                   meals.map((meal) => {
                     return (
@@ -167,11 +167,12 @@ function Drinks() {
                               src={meal.image}
                               
                               width={300}
+                              height={250}
                               className="meal-image"
                             />
                             <p className="mealname">{meal.name}</p>
                           </Link>
-                          <Button
+                          <Button style={{ backgroundColor: "#ffbc0d", color: "black", padding: "5px", marginTop: "15px", borderRadius: "7px" }}
                             className="cartButton"
                             onClick={(e) => {
                               e.stopPropagation();

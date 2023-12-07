@@ -28,7 +28,7 @@ function AdminNavbar() {
                 <Button><Link to="/admin">Dashboard</Link> </Button>
               </div>
               <div className="email-div">
-              <Button><Link to="/admin/mealspageforadmin">Meals</Link> </Button>
+              <Button><Link to="/admin/addnewmeals">Meals</Link> </Button>
               </div>
               <div className="karier-div">
               <Button><Link to="/admin/addmeals">Add New Meals</Link></Button>
