@@ -52,15 +52,15 @@ function Sauces() {
         <Grid container spacing={2}>
           <Grid item xs={2}>
           <div className="sidenavs">
-              <div className="sevimliler">
+              {/* <div className="sevimliler">
                 <img
                   className="sevimlimg"
                   src="https://mcdonalds.az/images/static/full_menu.jpg"
                   alt=""
-                  style={{ width: "100px" }}
+                style={{width:"100px", marginBottom:"20px"}}
                 />
                 <h4>Müştəri sevimliləri</h4>
-              </div>
+              </div> */}
               <div className="meals">
                 <div className="sortdiv">
                   <img

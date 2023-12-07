@@ -63,8 +63,8 @@ function Navbar() {
                 </Button>
                
               </div>
-            </div>
-            <button className="header-btn"> <Link to="/profile"> 
+            </div>  
+            <button className="header-btn" > <Link to="/profile"> 
             
             Profil</Link></button>
                 {!isLogin ? (
@@ -86,7 +86,7 @@ function Navbar() {
           {/* <div className="profile">
             <div className="user">
               {!isLogin ? (
-                <>
+                <>`
                   <Button>
                     <Link to="/login">Login</Link>
                   </Button>
