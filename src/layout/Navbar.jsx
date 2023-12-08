@@ -10,7 +10,9 @@ import { useDispatch, useSelector } from "react-redux";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import LoginIcon from '@mui/icons-material/Login';
+import LogoutIcon from '@mui/icons-material/Logout';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
+import { logout } from "../redux/slices/loginSlice";
 function Navbar() {
   const dispatch = useDispatch();
   const isLogin = useSelector((state) => state.login.isLogin);
@@ -74,7 +76,8 @@ function Navbar() {
               </>
 
                 ): (
-               <Link to="/login" onClick={()=>{localStorage.removeItem("loggeduser")}}><LoginIcon className="login-icon"></LoginIcon></Link>
+               <Link to="/login" onClick={()=>{localStorage.removeItem("loggeduser")
+              dispatch(logout())}}><LogoutIcon className="login-icon"></LogoutIcon></Link>
 
                 )}
                  <Link to="/wishlist"> <FavoriteIcon className="fav-icon1" ></FavoriteIcon></Link>

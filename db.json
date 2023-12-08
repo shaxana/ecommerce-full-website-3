@@ -1048,44 +1048,9 @@
     {
       "name": "Şahanə",
       "password": "123",
-      "basket": [
-        {
-          "name": "Şauram Roll",
-          "image": "https://mcdonalds.az/images/c20f2510cbddb63206c7d6c4ad263159.png",
-          "description": "Lavaşda xüsüsi sousun əlavəsi ilə suxarıya batırılmış, qızardılmış toyuq filesi, kartof və turşu xiyar.",
-          "allergen": [
-            "Sülfidlər",
-            "Xardal",
-            "Yumurta",
-            "Kərəviz",
-            "Qlüten"
-          ],
-          "info": [],
-          "size": [],
-          "categoryID": 1,
-          "id": "4",
-          "price": "5.99",
-          "count": 1
-        },
-        {
-          "name": "McCrispy™",
-          "image": "https://mcdonalds.az/images/eb02fdcd1e6fc5a0bdfae04a73cfaadc.png",
-          "description": "Küncütlü bulkanın arasında 100% toyuq filesindən xırtıldayan kotlet, təzə Aysberq salatı və ranç sousu.",
-          "allergen": [
-            "Süd",
-            "Yumurta",
-            "Qlüten",
-            "Küncüt tumları"
-          ],
-          "info": [],
-          "size": [],
-          "categoryID": 1,
-          "id": "5",
-          "price": 12.99
-        }
-      ],
+      "basket": [],
       "wishlist": [],
-      "balance": 152.01999999999998,
+      "balance": 143,
       "IsAdmin": true,
       "id": "2"
     },
@@ -1149,7 +1114,7 @@
     {
       "name": "Aysel",
       "password": "aysel",
-      "balance": null,
+      "balance": 134.01999999999998,
       "agreement": true,
       "isAdmin": false,
       "basket": [],

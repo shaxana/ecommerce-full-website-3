@@ -91,68 +91,71 @@ return <Grid item xs={4} key={cartItem.id}>
       }}> Delete</Button>
 
 
+<Button
+  style={{
+    backgroundColor: 'gold',
+    padding: 10,
+    width: 100,
+    border: 'none',
+    borderRadius: 8,
+    marginLeft: 10,
+    marginBottom: 10,
+    marginRight: 10,
+    cursor: 'pointer',
+  }}
+  size="small"
+  onClick={async () => {
+    if (currentUser && currentUser.balance !== null && currentUser.balance !== undefined) {
+      let userBalance = parseFloat(currentUser.balance).toFixed(2);
+      console.log(userBalance);
+      console.log(cartItem.price);
 
-<Button style={{backgroundColor:'gold', padding:10, width:100, border:"none", borderRadius:8 ,marginLeft:10, marginBottom:10, marginRight:10, cursor:"pointer"}} size="small" onClick={()=>{
+      if (userBalance >= cartItem.price) {
+        let newBalance = userBalance - cartItem.price;
 
-if (currentUser && currentUser.balance !== null && currentUser.balance !== undefined){
-  let userBalance = parseFloat(currentUser.balance).toFixed(2);
-  console.log(userBalance);
-  console.log(cartItem.price);
+        dispatch(updateUserBalance({ id: currentUser.id, balance: newBalance }));
 
+        try {
+          await axios.patch(`http://localhost:3000/users/${currentUser.id}`, {
+            basket: cartItems.filter((item) => item.id !== cartItem.id),
+            balance: newBalance,
+          });
 
- if (currentUser.balance >= cartItem.price){
+          dispatch(buyMeal(cartItem));
 
-  dispatch(buyMeal(cartItem))
-  // console.log(state.meals);
-  console.log(currentUser.balance);
-  if (currentUser.id){
-    let newBalance = currentUser.balance - cartItem.price
- dispatch(updateUserBalance({id: currentUser.id, balance: newBalance} ))
- axios.patch(`http://localhost:3000/users/${currentUser.id}`, {
-  basket: cartItems.filter((item) => item.id !== cartItem.id),
-  balance: newBalance
+          Swal.fire({
+            title: `Bon Appétit! Your balance: ${newBalance}`,
+            showClass: {
+              popup: 'animate__animated animate__fadeInUp animate__faster',
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutDown animate__faster',
+            },
+          });
+        } catch (error) {
+          console.error('Error updating user balance:', error);
+        }
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Not enough balance!',
+          footer: '<Link to="/profile">Increase balance</Link>',
+        });
+      }
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Not enough balance!',
+        footer: '<Link to="/profile">Increase balance</Link>',
+      });
+    }
+  }}
+>
+  Buy
+</Button>
 
-});
-
-Swal.fire({
-  title: `Bon Appettit!
-  your balance: ${currentUser.balance}`,
-  showClass: {
-    popup: `
-      animate__animated
-      animate__fadeInUp
-      animate__faster
-    `
-  },
-  hideClass: {
-    popup: `
-      animate__animated
-      animate__fadeOutDown
-      animate__faster
-    `
-  }
-});}
-  }
-  else{
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "Not enoguh balance!",
-      footer: '<Link  to="/profile">increase balance</Link>'
-    });
-    
-  }
- }
- else{
-  Swal.fire({
-    icon: "error",
-    title: "Oops...",
-    text: "Not enough balance!",
-    footer: '<Link to="/profile">Increase balance</Link>'
-  });
-  
-}
-}}>Buy</Button>
 
 </div>
        

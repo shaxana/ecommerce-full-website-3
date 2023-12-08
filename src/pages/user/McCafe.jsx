@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import axios from "axios";
 import { Button } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IoSearchOutline } from "react-icons/io5";
 import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as solidHeart } from "@fortawesome/free-solid-svg-icons";
 import {

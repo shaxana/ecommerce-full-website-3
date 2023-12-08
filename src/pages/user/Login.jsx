@@ -122,7 +122,7 @@ function Login() {
                     console.log(loginSuccess(check));
                     localStorage.setItem("loggeduser", JSON.stringify(check))
                     let isAdmin = check.IsAdmin; 
-                    console.log(isAdmin);
+                    
                     if (isAdmin) {
                       navigate("/admin")
                     }
