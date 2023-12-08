@@ -1049,8 +1049,20 @@
       "name": "Şahanə",
       "password": "123",
       "basket": [],
-      "wishlist": [],
-      "balance": 143,
+      "wishlist": [
+        {
+          "name": "Bif Freş",
+          "image": "https://mcdonalds.az/images/36e04d7fca426a5e7a4ad922a0041f8e.png",
+          "description": "Karamelləşdirilmiş küncütlü bulkanın arasında 100% mal ətindən döyülmüş bifşteks, 1 ədəd Çedder pendirinin dilimi, xüsusi sousu, təzə soğan, təzə Aysberq salatı, xıyar və pomidor dilimləri.",
+          "allergen": [],
+          "info": [],
+          "size": [],
+          "categoryID": 1,
+          "id": "1",
+          "price": 8.99
+        }
+      ],
+      "balance": 129.01999999999998,
       "IsAdmin": true,
       "id": "2"
     },

@@ -111,7 +111,7 @@ export default () => {
           <section className="section-card">
             <div className="card1">
               <div className="mc-card2">
-                <img
+                <img style={{width:"70%",height:"150px"}}
                   src="https://mcdonalds.az/images/36d465453ba9d421a026d608495fb2e3.png"
                   alt=""
                 />
@@ -121,6 +121,8 @@ export default () => {
                   “McDonald’s”dan elektron məktublar almaq üçün qeydiyyatdan
                   keçin.
                 </p>
+                <br />
+                <br />
                 <br />
                 <button className="card-btn1">Ətraflı</button>
               </div>
