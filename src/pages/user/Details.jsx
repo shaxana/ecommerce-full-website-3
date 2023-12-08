@@ -1,138 +1,161 @@
-import React, { useEffect, useState } from 'react'
-import './../../style/sass/detail.scss'
-import axios from 'axios';
-import {  useParams } from 'react-router-dom'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import './../../style/sass/swiper.scss';
-import { Pagination, Navigation } from 'swiper/modules';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import React from "react";
+import {
+  Autoplay,
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from "swiper/modules";
 
-function Detail() {
-    const [swiperRef, setSwiperRef] = useState(null);
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "./../../style/sass/home.scss";
 
-    let appendNumber = 4;
-    let prependNumber = 1;
-  
-    const prepend2 = () => {
-      swiperRef.prependSlide([
-        '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
-        '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
-      ]);
-    };
-  
-    const prepend = () => {
-      swiperRef.prependSlide(
-        '<div class="swiper-slide">Slide ' + --prependNumber + '</div>'
-      );
-    };
-  
-    const append = () => {
-      swiperRef.appendSlide(
-        '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>'
-      );
-    };
-  
-    const append2 = () => {
-      swiperRef.appendSlide([
-        '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
-        '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
-      ]);
-    };
-  
-    const {id} = useParams();
-    const [meals, setMeal] = useState([])
-    useEffect(()=>{
-        axios(`http://localhost:3000/meals/${id}`).then((res)=>{
-            setMeal(res.data)
-        })
-    },[id])
-    
-    return (
-        <section className='burgerdetail'>
-            <div className="container">
-                <div className="burgerdiv">
-                    <div className="leftburger">
-                        <img src={meals.image} alt="" />
-                    </div>
-                    <div className="rightburger">
-                        <h1>{meals.name}</h1>
-                        <div className="text">
-                            <p>{meals.description} </p>
-                        </div>
-                    </div>
-                </div>
-                <section className='burgermedium'>
-                    <div className="container2"> <br />
-                        <h1>Əlaqədar məhsullar</h1>
-                      
-                        <Swiper
-        onSwiper={setSwiperRef}
-        slidesPerView={3}
-        centeredSlides={true}
-        spaceBetween={30}
-        pagination={{
-          type: 'fraction',
+export default () => {
+  return (
+    <>
+      <Swiper
+        // install Swiper modules
+        modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={0}
+        slidesPerView={1}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
         }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        style={{
+          width: "65%",
+          height: "80%",
+          margin: "40px auto",
+          borderRadius: "10px",
+        }}
+        // onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide>
-        <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="https://mcdonalds.az/images/36e04d7fca426a5e7a4ad922a0041f8e.png"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-        
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-
+          <img
+            style={{ width: "100%", height: "100%" }}
+            src="https://s7d1.scene7.com/is/image/mcdonalds/paddington-happymeal-cs:accessible-carousel-desktop?resmode=sharp2"
+            alt=""
+          />
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>
+          <img
+            style={{ width: "100%", height: "100%" }}
+            src="https://www.mcdonalds.com/content/dam/sites/uk/nfl/hero/festive-food-cs.jpg"
+            alt=""
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            style={{ width: "100%", height: "100%" }}
+            src="https://s7d1.scene7.com/is/image/mcdonalds/change-a-little-change-a-lot-cs:accessible-carousel-desktop?resmode=sharp2"
+            alt=""
+          />
+        </SwiperSlide>
       </Swiper>
-
-      <p className="append-buttons">
-        <button onClick={() => prepend2()} className="prepend-2-slides">
-          Prepend 2 Slides
-        </button>
-        <button onClick={() => prepend()} className="prepend-slide">
-          Prepend Slide
-        </button>
-        <button onClick={() => append()} className="append-slide">
-          Append Slide
-        </button>
-        <button onClick={() => append2()} className="append-2-slides">
-          Append 2 Slides
-        </button>
-      </p>
-    
-                    </div>
-
-                </section>
-                
+      <div className="container">
+        <div className="mc-card">
+          <section className="section-info">
+            <div className="mc-cardimg">
+              <img
+                src="https://mcdonalds.az/images/392d23f9e55ac4056d2a56184b1d5213.jpg"
+                alt=""
+              />
             </div>
-        </section>
-    )
-}
+            <div className="mc-text">
+              <h3>
+                “McDonald’s”dan yemək sifarişləri “Wolt” vasitəsilə çatdırılma
+                ilə.
+              </h3>
+              <p style={{ marginLeft: 110, marginBottom: 20 }}>
+                “McDonald’s”dan yeməklərin “Wolt” vasitəsilə çatdırılması.
+              </p>
+              <button className="mac-btn">Ətraflı</button>
+            </div>
+          </section>
 
-export default Detail
+          <section className="section-info2">
+            <div className="mc-text2">
+              <h2>“McDonald’s”ın mobil tətbiqini yükləyin.</h2>
+
+              <p style={{ marginLeft: 110 }}>
+                "McDonald's" tətbiqində xüsusi təkliflər.
+              </p>
+              <br />
+              <br />
+              <button className="mac-btn2">Ətraflı</button>
+            </div>
+            <div className="mc-cardimg2">
+              <img
+                src="https://mcdonalds.az/images/36d465453ba9d421a026d608495fb2e3.png"
+                alt=""
+              />
+            </div>
+          </section>
+          {/* ===================================================================================== */}
+          <section className="section-card">
+            <div className="card1">
+              <div className="mc-card2">
+                <img
+                  src="https://mcdonalds.az/images/36d465453ba9d421a026d608495fb2e3.png"
+                  alt=""
+                />
+
+                <h2 className="cardtext">E-məktublarımıza abunə olun</h2>
+                <p style={{ marginLeft: 110 }}>
+                  “McDonald’s”dan elektron məktublar almaq üçün qeydiyyatdan
+                  keçin.
+                </p>
+                <br />
+                <button className="card-btn1">Ətraflı</button>
+              </div>
+              {/* ======================================================================================== */}
+              <div className="mc-card3">
+                <img
+                  src="https://mcdonalds.az/images/84b30fedac58f3e1433a3da5d0c945a9.png"
+                  alt=""
+                />
+
+                <h2 className="cardtext2">“McDonald's” ailəsinə qoşulun</h2>
+                <p style={{ marginLeft: 110 }}>
+                  “McDonald’s”dan elektron məktublar almaq üçün qeydiyyatdan
+                  keçin.
+                </p>
+                <br />
+                <button className="card-btn2">Ətraflı</button>
+              </div>
+              {/* ================================================================================================ */}
+              <div className="mc-card4">
+                <img
+                  src="https://mcdonalds.az/images/e1365cd6b7a0589ce08bdd726c4d7ab3.jpg"
+                  alt=""
+                />
+
+                <h1 className="cardtext3">
+                  Yeməklərimiz <br /> haqqında
+                </h1>
+                <p style={{ marginLeft: 110 }}>
+                  Yeməklərimizin hazırlanma üsullarının keyfiyyətini
+                  təkmilləşdiririk.
+                </p>
+                <br />
+                <button className="card-btn3">Ətraflı</button>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+        </div>
+      </div>
+    </>
+  );
+};

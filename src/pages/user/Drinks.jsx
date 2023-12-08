@@ -5,7 +5,7 @@ import { Link,useParams } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
 import { Button } from "@mui/material";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";x
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as solidHeart } from "@fortawesome/free-solid-svg-icons";
 import {

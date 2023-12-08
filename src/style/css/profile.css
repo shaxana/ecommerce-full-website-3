@@ -1,18 +1,21 @@
 .pro {
   position: relative;
   bottom: 100px;
-  height: 79vh;
+  height: 78vh;
   width: 100%;
-  background-color: #ffbc0d;
   margin: 0 auto;
   text-align: center;
+  background-image: url("https://images.pexels.com/photos/13952409/pexels-photo-13952409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .pro2 {
   position: relative;
-  top: 50px;
+  top: 100px;
+  left: 450px;
   background-color: white;
-  width: 650px;
+  width: 850px;
   margin: 0 auto;
 }
 
