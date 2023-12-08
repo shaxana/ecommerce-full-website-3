@@ -50,14 +50,15 @@ function Login() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Grid   container component="main" sx={{ height: "100vh" }} >
+      <Grid container component="main" sx={{ height: "85vh", marginTop: "-85px" }} >
         <CssBaseline />
-        <Grid 
+        <Grid
           item
           xs={false}
           sm={4}
           md={7}
           sx={{
+
             backgroundImage: "url(https://images.pexels.com/photos/18792340/pexels-photo-18792340/free-photo-of-burger-with-christmas-ornaments-and-a-sparkler.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
             ,
             backgroundRepeat: "no-repeat",
@@ -66,19 +67,19 @@ function Login() {
                 ? t.palette.grey[50]
                 : t.palette.grey[900],
             backgroundSize: "cover",
-            height: "100vh",
+            height: "85vh",
             backgroundPosition: "center",
           }}
         />
-        <Grid      item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+        <Grid style={{ height: "85vh" }} item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <Box
-       
-        
+
+
             sx={{
               position: 'relative',
               // backgroundImage: "url(https://images.pexels.com/photos/18792340/pexels-photo-18792340/free-photo-of-burger-with-christmas-ornaments-and-a-sparkler.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
               backgroundRepeat: "no-repeat",
-              height: "100vh",
+              height: "85vh",
               textAlign: "center",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -120,12 +121,12 @@ function Login() {
                     dispatch(loginSuccess(check));
                     console.log(loginSuccess(check));
                     localStorage.setItem("loggeduser", JSON.stringify(check))
-                    let isAdmin = JSON.parse(localStorage.getItem("loggeduser"))? JSON.parse(localStorage.getItem("loggeduser")).isAdmin : false
+                    let isAdmin = check.IsAdmin; 
                     console.log(isAdmin);
-                    if (isAdmin){
+                    if (isAdmin) {
                       navigate("/admin")
                     }
-                    else{
+                    else {
                       navigate("/")
                     }
                   }

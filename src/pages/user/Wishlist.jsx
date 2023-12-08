@@ -39,7 +39,7 @@ const Wishlist = () => {
      return      (
     <Grid item xs={4} key={favItem.id}>
     <Card sx={{ maxWidth: 345 }} style={{marginLeft:50}}>
-    <FontAwesomeIcon icon={faHeart} style={{marginLeft:310, color:'red', cursor:"pointer"}} onClick={()=>{
+    <FontAwesomeIcon icon={faHeart} style={{marginLeft:310, color:'red', cursor:"pointer",fontSize:"24px",marginTop:"35px"}} onClick={()=>{
       if (currentUser && currentUser.id) {
         axios.patch(`http://localhost:3000/users/${currentUser.id}`, {
           wishlist: favItems.filter((item) => item.id !== favItem.id),

@@ -9,6 +9,8 @@ import { Button } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as solidHeart } from "@fortawesome/free-solid-svg-icons";
+import { IoSearchOutline } from "react-icons/io5";
+
 import {
   addToFavorite,
   removeFavorite,
@@ -19,6 +21,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import "./../../style/sass/meals.scss";
 import { current } from "@reduxjs/toolkit";
+import Footer from "../../layout/Footer";
 function Meals() {
   let [meals, setMeal] = useState([]);
 
@@ -41,15 +44,46 @@ function Meals() {
   const currentUser = useSelector((state) => state.login.currentUser);
 
   let [fav, setFav] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filteredMeals, setFilteredMeals] = useState([]);
+
   const favItems = useSelector((state) => {
     return state.login.wishlist;
   });
   const cartItems = useSelector((state) => {
     return state.login.cart;
   });
+  const handleSearch = (event) => {
+    const query = event.target.value.toLowerCase();
+    setSearchQuery(query);
+
+    if (query.trim() === '') {
+      setFilteredMeals([]);
+    } else {
+      const filtered = meals.filter((meal) =>
+        meal.name.toLowerCase().includes(query)
+      );
+      setFilteredMeals(filtered);
+    }
+  };
   return (
     <>
       <Container>
+      <div style={{ border: "none" }} className="search-bar">
+          <input
+            style={{ fontSize: "23px", borderRadius: "6px", cursor: "pointer", height: "40px", marginRight: "10px", marginBottom: "10px" }}
+            type="text"
+            placeholder="Search meals..."
+            value={searchQuery}
+            onChange={handleSearch}
+
+          />
+
+          < IoSearchOutline fontSize={24} />
+
+
+        </div>
+
         <Grid container spacing={2}>
           <Grid item xs={2}>
             <div className="sidenavs">
@@ -150,8 +184,7 @@ function Meals() {
             <div className="cards">
               <h1 className="cardsmealheading">Burgerlər</h1>
               <Grid container spacing={2}>
-                {meals &&
-                  meals.map((meal) => {
+                {(searchQuery.length>0 ? filteredMeals : meals).map((meal) => {
                     return (
                       <Grid
                         item
@@ -166,8 +199,9 @@ function Meals() {
                           <Link to={`/meals/${meal.id}`}>
                             <img
                               src={meal.image}
-                              height={250}
-                              width={300}
+                              height={200}
+                              width={400}
+                              
                               className="meal-image"
                             />
                             <p className="mealname">{meal.name}</p>
@@ -235,6 +269,7 @@ function Meals() {
             </div>
           </Grid>
         </Grid>
+        <Footer/>
       </Container>
     </>
   );

@@ -2,12 +2,16 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Row } from 'react-bootstrap'
 import './../style/sass/footer.scss'
+import { CiFacebook } from "react-icons/ci";
+import { CiYoutube } from "react-icons/ci";
+import { CiInstagram } from "react-icons/ci";
+import { CiLinkedin } from "react-icons/ci";
 function Footer() {
   return (
     <div>
         <Container>
             <Row>
-        <footer style={{display:"flex",margin:"0 auto"}}>
+            <footer className="footercard" style={{display:"flex", marginLeft:"210px"}}>
             <div className="firstfooter">
                 <ul>
                     <li>Haqqımızda</li>
@@ -36,10 +40,27 @@ function Footer() {
             <li>Mobil tətbiqi yükləyin</li>
            </ul>
            <ul className='lastfooter'>
-            <li>Mobil tətbiq haqqında fikirləriniz</li>
+            <li>Mobil tətbiq haqqında fikirləriniz</li> 
             <li>Restoran haqqında fikirləriniz</li>
+           </ul> 
+           <div className="image1">
+           <img src="https://mcdonalds.az/images/static/app_store_badge.png" alt="" />
+          
+           <img src="https://mcdonalds.az/images/static/google_play_badge.png" alt="" />
+           </div>
+           <ul className="icons">
+  
+           <li> <CiFacebook /></li>
+            <li><CiYoutube /></li>
+            <li><CiInstagram /></li>
+            <li><CiLinkedin /></li>
+
            </ul>
-        </footer>   
+
+         
+
+        </footer>  
+       
         </Row>
         </Container>
     </div>

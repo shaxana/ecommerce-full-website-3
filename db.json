@@ -1048,12 +1048,46 @@
     {
       "name": "Şahanə",
       "password": "123",
-      "Basket": [],
+      "basket": [
+        {
+          "name": "Şauram Roll",
+          "image": "https://mcdonalds.az/images/c20f2510cbddb63206c7d6c4ad263159.png",
+          "description": "Lavaşda xüsüsi sousun əlavəsi ilə suxarıya batırılmış, qızardılmış toyuq filesi, kartof və turşu xiyar.",
+          "allergen": [
+            "Sülfidlər",
+            "Xardal",
+            "Yumurta",
+            "Kərəviz",
+            "Qlüten"
+          ],
+          "info": [],
+          "size": [],
+          "categoryID": 1,
+          "id": "4",
+          "price": "5.99",
+          "count": 1
+        },
+        {
+          "name": "McCrispy™",
+          "image": "https://mcdonalds.az/images/eb02fdcd1e6fc5a0bdfae04a73cfaadc.png",
+          "description": "Küncütlü bulkanın arasında 100% toyuq filesindən xırtıldayan kotlet, təzə Aysberq salatı və ranç sousu.",
+          "allergen": [
+            "Süd",
+            "Yumurta",
+            "Qlüten",
+            "Küncüt tumları"
+          ],
+          "info": [],
+          "size": [],
+          "categoryID": 1,
+          "id": "5",
+          "price": 12.99
+        }
+      ],
       "wishlist": [],
-      "balance": null,
+      "balance": 152.01999999999998,
       "IsAdmin": true,
-      "id": "2",
-      "basket": []
+      "id": "2"
     },
     {
       "name": "Nahid",
@@ -1140,11 +1174,51 @@
     {
       "name": "qurban",
       "password": "qurban",
-      "balance": 300,
+      "balance": 295.01,
       "agreement": true,
       "isAdmin": false,
-      "basket": [],
-      "wishlist": [],
+      "basket": [
+        {
+          "name": "  Frenç Frayz   ",
+          "image": "https://mcdonalds.az/images/40b3007ef474215e514f44edc6a6eb45.png",
+          "description": "Fritürda qızılı rəngədək qızardılmış və bir balaca duzlanmış xırçıldayan kartof çubuqları.",
+          "allergen": [],
+          "info": [],
+          "size": [],
+          "categoryID": 4,
+          "id": "36",
+          "price": 2.99,
+          "count": 1
+        }
+      ],
+      "wishlist": [
+        {
+          "name": "  Frenç Frayz   ",
+          "image": "https://mcdonalds.az/images/40b3007ef474215e514f44edc6a6eb45.png",
+          "description": "Fritürda qızılı rəngədək qızardılmış və bir balaca duzlanmış xırçıldayan kartof çubuqları.",
+          "allergen": [],
+          "info": [],
+          "size": [],
+          "categoryID": 4,
+          "id": "36",
+          "price": 2.99
+        },
+        {
+          "name": "Krevetli Sezar",
+          "image": "https://mcdonalds.az/images/a038b2bfc3f65d59d8c1c3ad49910756.png",
+          "description": "Qızardırılmış krevetlər, təzə qarışıq salat, çeri pomidorları və parmezan pendiri.",
+          "allergen": [
+            "Süd",
+            "Yumurta",
+            "Xərçəng kimilər"
+          ],
+          "info": [],
+          "size": [],
+          "categoryID": 5,
+          "id": "43",
+          "price": 7.99
+        }
+      ],
       "id": "xnmsn50"
     },
     {

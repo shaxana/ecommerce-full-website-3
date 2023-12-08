@@ -33,10 +33,21 @@ const Profile = () => {
             <strong>Balance:</strong> {currentUser.balance}
           </div>
           <div>
-            <strong>Wishlist:</strong> {currentUser.wishlist}
-          </div> <div>
-            <strong>Cart:</strong> {currentUser.cart}
-          </div>
+  <strong>Wishlist:</strong> 
+  {currentUser.wishlist && currentUser.wishlist.map((item) => (
+    <div key={item.id}>
+      {item.name}
+    </div>
+  ))}
+</div>
+<div>
+  <strong>Cart:</strong>
+  {currentUser.cart && currentUser.cart.map((item) => (
+    <div key={item.id}>
+      {item.name} - {item.price}
+    </div>
+  ))}
+</div>
         </div>
       ) : (
         <p style={{marginLeft:150}}>Please log in to view your profile.</p>

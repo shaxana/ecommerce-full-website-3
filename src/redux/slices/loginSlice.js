@@ -46,7 +46,9 @@ const loginSlice = createSlice({
       state.wishlist = [];
     },
     updateUserBalance: (state, action) => {
-      state.currentUser.balance = action.payload;
+      if (action.payload !== null) {
+        state.currentUser.balance = action.payload;
+      }
     },
     increaseCount: (state, action) => {
       if (state.cart.find((item) => item.id === action.payload.id)) {

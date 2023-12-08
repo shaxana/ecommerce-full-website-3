@@ -27,42 +27,42 @@ function Users() {
       .catch((err) => console.error(err));
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   axios
-  //     .post("http://localhost:3000/users", { name: uname, password: upassword })
-  //     .then((res) => {
-  //       dispatch(setUname(""));
-  //       dispatch(setUpassword(""));
-  //       fetchData();
-  //     })
-  //     .catch((err) => console.error(err));
-  // };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post("http://localhost:3000/users", { name: uname, password: upassword })
+      .then((res) => {
+        dispatch(setUname(""));
+        dispatch(setUpassword(""));
+        fetchData();
+      })
+      .catch((err) => console.error(err));
+  };
 
-  // const handleEdit = (id) => {
-  //   axios
-  //     .get(`http://localhost:3000/users/${id}`)
-  //     .then((res) => {
-  //       dispatch(setUname(res.data.name));
-  //       dispatch(setUpassword(res.data.password));
-  //       dispatch(setEditId(id));
-  //     })
-  //     .catch((err) => console.error(err));
-  // };
+  const handleEdit = (id) => {
+    axios
+      .get(`http://localhost:3000/users/${id}`)
+      .then((res) => {
+        dispatch(setUname(res.data.name));
+        dispatch(setUpassword(res.data.password));
+        dispatch(setEditId(id));
+      })
+      .catch((err) => console.error(err));
+  };
 
-  // const handleUpdate = (id) => {
-  //   axios
-  //     .put(`http://localhost:3000/users/${id}`, {
-  //       name: uname,
-  //       password: upassword,
-  //     })
-  //     .then((res) => {
-  //       dispatch(setUname(""));
-  //       dispatch(setUpassword(""));
-  //       dispatch(setEditId(""));
-  //       fetchData();
-  //     });
-  // };
+  const handleUpdate = (id) => {
+    axios
+      .put(`http://localhost:3000/users/${id}`, {
+        name: uname,
+        password: upassword,
+      })
+      .then((res) => {
+        dispatch(setUname(""));
+        dispatch(setUpassword(""));
+        dispatch(setEditId(""));
+        fetchData();
+      });
+  };
 
   const handleDelete = (id) => {
     axios.delete(`http://localhost:3000/users/${id}`).then(() => {
@@ -78,9 +78,9 @@ function Users() {
           margin: "0 auto",
           padding: "20px",
         }}
-        // onSubmit={handleSubmit}
+        onSubmit={handleSubmit}
       >
-        {/* <input
+        <input
           style={{ width: "38%", height: "40px" }}
           type="text"
           placeholder="Enter Name"
@@ -93,8 +93,8 @@ function Users() {
           placeholder="Enter Password"
           value={upassword}
           onChange={(e) => dispatch(setUpassword(e.target.value))}
-        /> */}
-        {/* <button
+        />
+        <button
           type="submit"
           style={{
             background: "green",
@@ -107,7 +107,7 @@ function Users() {
           }}
         >
           Add
-        </button> */}
+        </button>
       </form>
 
       <table
@@ -157,20 +157,20 @@ function Users() {
       )}
     </td>
     <td>
-      {/* {editId === user.id ? (
+      {editId === user.id ? (
         <button style={{ background: "blue", color: "white", width: "90px", height: "32px", padding: "5px", fontSize: "20px", textAlign: "center", cursor: "pointer", margin: "10px" }}
           onClick={() => handleUpdate(user.id)}>Update</button>
-      ) : ( */}
+      ) : (
         <>
-          {/* <button style={{ fontSize: "20px", background: "yellow", width: "60px", height: "40px", cursor: "pointer", border: "none", margin: "10px", borderRadius: "8px" }}
-            onClick={() => handleEdit(user.id)}>Edit</button> */}
+          <button style={{ fontSize: "20px", background: "yellow", width: "60px", height: "40px", cursor: "pointer", border: "none", margin: "10px", borderRadius: "8px" }}
+            onClick={() => handleEdit(user.id)}>Edit</button>
 
 
 
           <button style={{ fontSize: "20px", background: "red", width: "60px", height: "40px", cursor: "pointer", border: "none", margin: "10px", borderRadius: "8px",  }}
             onClick={() => handleDelete(user.id)}>Delete</button>
         </>
-      {/* )} */}
+      )} 
     </td>
   </tr>
 ))}

@@ -18,6 +18,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import "./../../style/sass/meals.scss";
 import { current } from "@reduxjs/toolkit";
+import Footer from "../../layout/Footer";
 function HotDrinks() {
   let [meals, setMeal] = useState([]);
 
@@ -234,6 +235,7 @@ function HotDrinks() {
             </div>
           </Grid>
         </Grid>
+        <Footer/>
       </Container>
     </>
   );
